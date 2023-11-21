@@ -97,6 +97,7 @@
     background-color: rgba(0, 0, 0, 0.6);
     left: 30%;
     top: 30%;
+    transition: opacity 2s ease-in-out;
 }
 .contactWrap p {
     margin-bottom: 20px;
