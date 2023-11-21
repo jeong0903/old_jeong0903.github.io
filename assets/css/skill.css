@@ -1,4 +1,5 @@
 .header,
+.banner,
 .footer {
     width: 100%;
     position: absolute;
@@ -8,26 +9,10 @@
     text-align: center;
 }
 
-.banner {
-    top: 0;
-    height: 200px;
-    background-color: rgba(0, 0, 0, 0.6);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-@keyframes textFill {
-    0% {
-        background-clip: text;
-        color: #333;
-    }
-
-    100% {
-        background-clip: text;
-        color: #fff;
-    }
+.headerMenu li {
+    text-align: center;
+    font-size: 1.5rem;
+    list-style: none;
 }
 
 .headerMenu {
@@ -39,6 +24,8 @@
     margin-top: 140px;
     width: 800px;
 }
+
+/* skill 본문 */
 
 .skillWrap {
     width: 90%;

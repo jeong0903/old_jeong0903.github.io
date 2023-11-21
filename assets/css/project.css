@@ -1,5 +1,5 @@
 .header,
-.main,
+.banner,
 .footer {
     width: 100%;
     position: absolute;
@@ -9,37 +9,10 @@
     text-align: center;
 }
 
-.main {
-    top: 0;
-    height: 200px;
-    background-color: rgba(0, 0, 0, 0.6);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-@keyframes textFill {
-    0% {
-        background-clip: text;
-        color: #333;
-    }
-
-    100% {
-        background-clip: text;
-        color: #fff;
-    }
-}
-
-.main #main1 {
-    position: relative;
-    top: -25px;
-    font-size: 36px;
-    font-weight: bold;
-    background: linear-gradient(to right, #fff, #fff);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    animation: textFill 2s infinite alternate;
+.headerMenu li {
+    text-align: center;
+    font-size: 1.5rem;
+    list-style: none;
 }
 
 .headerMenu{
@@ -51,6 +24,9 @@
     margin-top: 140px;
     width: 800px;
 }
+
+/* project 본문 */
+
 .headerMenu li{
     text-align: center;
     font-size: 1.5rem;

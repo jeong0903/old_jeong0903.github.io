@@ -10,18 +10,16 @@
 }
 
 .banner {
-    top: 0;
     height: 200px;
-    background-color: rgba(0, 0, 0, 0.6);
-    display: flex;
-    flex-direction: column;
 }
-
+.bannerWrap{
+    margin-top: 100px;
+}
 .banner #banner2{
     margin: 15px;
 }
 .banner #banner3{
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 .headerMenu{
     display: flex;
