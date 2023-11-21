@@ -30,18 +30,6 @@
     }
 }
 
-.main #main1 {
-    position: relative;
-    top: -25px;
-    font-size: 36px;
-    font-weight: bold;
-    background: linear-gradient(to right, #fff, #fff);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    animation: textFill 2s infinite alternate;
-}
-
 .headerMenu{
     position: relative;
     z-index: 500;
@@ -51,31 +39,28 @@
     margin-top: 140px;
     width: 800px;
 }
-.headerMenu li{
-    text-align: center;
-    font-size: 1.5rem;
-    list-style: none;
-}
-.headerMenu a{
-    text-decoration: none;
-}
 
-.headerMenu a:hover{
+.aboutMeWrap{
+    height: 200px;
+    width: 600px;
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 30px;
+}
+.aboutMeWrap #aboutMeTitle{
     font-weight: 900;
-    color: #fff;
-        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
-        animation: neon 3.0s infinite alternate;
+    font-size: 2.5rem;
+    letter-spacing: 10px;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 50px;
+    padding-bottom: 10px;
 }
-@keyframes neon {
-    from {
-        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
-    }
-
-    to {
-        text-shadow: 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 50px #ff00de, 0 0 80px #ff00de, 0 0 90px #ff00de, 0 0 110px #ff00de, 0 0 170px #ff00de;
-    }
-}
-
-.aboutMe{
-    background-color: gold;
+#Lv_1{
+    color: aquamarine;
+    font-weight: 900;
 }
