@@ -24,7 +24,7 @@
 
         <div class="header">
             <ul class="headerMenu">
-                <li id="menu1"><a href="http://jeong0903.github.io/index.html.html">HOME</a></li>
+                <li id="menu1"><a href="http://jeong0903.github.io/index.html">HOME</a></li>
                 <li id="menu2"><a href="http://jeong0903.github.io/aboutMe.html">ABOUT ME</a></li>
                 <li id="menu3"><a href="http://jeong0903.github.io/skill.html">SKILL</a></li>
                 <li id="menu4"><a href="http://jeong0903.github.io/project.html">PROJECT</a></li>
@@ -48,7 +48,23 @@
             <p>ⓒ2023. JEONG HYEON PARK. RIGHTS RESERVED</p>
         </div>
     </div>
+<script>
+    // JavaScript로 클릭 이벤트를 감지하고 동작을 수행합니다.
+    document.addEventListener('DOMContentLoaded', function () {
+        const menu1 = document.getElementById('menu1');
+        const headerMenu = document.querySelector('.headerMenu');
+        const contactSection = document.querySelector('.contact');
 
+        menu1.addEventListener('click', function (event) {
+            // contact 클래스를 가진 요소를 숨깁니다.
+            contactSection.style.display = 'none';
+
+            // headerMenu를 오른쪽으로 이동하는 효과를 줍니다.
+            headerMenu.style.transform = 'translateX(100%)';
+            // 혹은 다른 원하는 CSS를 적용하여 이동 효과를 줄 수 있습니다.
+        });
+    });
+</script>
 </body>
 
 </html>
