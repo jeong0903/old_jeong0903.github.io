@@ -32,10 +32,13 @@ body {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.6);
 }
-
-.main #main1 {
+.banner{
+    height: 200px;
+    background-color: gold;
+}
+.banner #banner1 {
     position: relative;
-    top: -25px;
+    /* padding-top: 30px; */
     font-size: 36px;
     font-weight: bold;
     background: linear-gradient(to right, #fff, #fff);
@@ -44,10 +47,17 @@ body {
     color: transparent;
     animation: textFill 2s infinite alternate;
 }
-.headerMenu li {
-    text-align: center;
-    font-size: 1.5rem;
-    list-style: none;
+
+@keyframes textFill {
+    0% {
+        background-clip: text;
+        color: #333;
+    }
+
+    100% {
+        background-clip: text;
+        color: #fff;
+    }
 }
 
 .headerMenu a {
