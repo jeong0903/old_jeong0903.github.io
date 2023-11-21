@@ -1,0 +1,81 @@
+.header,
+.main,
+.footer {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.main {
+    top: 0;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+@keyframes textFill {
+    0% {
+        background-clip: text;
+        color: #333;
+    }
+
+    100% {
+        background-clip: text;
+        color: #fff;
+    }
+}
+
+.main #main1 {
+    position: relative;
+    top: -25px;
+    font-size: 36px;
+    font-weight: bold;
+    background: linear-gradient(to right, #fff, #fff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: textFill 2s infinite alternate;
+}
+
+.headerMenu{
+    position: relative;
+    z-index: 500;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 140px;
+    width: 800px;
+}
+.headerMenu li{
+    text-align: center;
+    font-size: 1.5rem;
+    list-style: none;
+}
+.headerMenu a{
+    text-decoration: none;
+}
+
+.headerMenu a:hover{
+    font-weight: 900;
+    color: #fff;
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+        animation: neon 3.0s infinite alternate;
+}
+@keyframes neon {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+    }
+
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 50px #ff00de, 0 0 80px #ff00de, 0 0 90px #ff00de, 0 0 110px #ff00de, 0 0 170px #ff00de;
+    }
+}
+
+.aboutMe{
+    background-color: gold;
+}

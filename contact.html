@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JEONG HYEON PARK</title>
     <!-- <link rel="stylesheet" href="/jeong0903.github.io/style.css"> -->
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/assets/css/contact.css">
     <!-- 공통 -->
     <link rel="stylesheet" href="/assets/css/common.css">
     <script src="https://kit.fontawesome.com/ba16334cfd.js" crossorigin="anonymous"></script>
@@ -32,7 +32,7 @@
             </ul>
         </div>
 
-        <div class="contact" style="display: none;">
+        <div class="contact">
             <div class="contactWrap">
                 <p id="contactTitle">CONTACT</p>
                 <p id="contact1">
@@ -41,9 +41,6 @@
                 <p id="contact2">
                     <span id="contactTitle_email">EMAIL</span><a href="mailto:9193jane@gmail.com" id="emailAddress"><i class="fa-solid fa-at"></i>9193jane@gmail.com</a>
                 </p>
-                <!-- <p id="contact3"> -->
-                    <!-- <span id="contactTitle_comment">COMMENT</span><input placeholder="개발자에게 할 말"></input><button value="submit">submit</button> -->
-                <!-- </p> -->
             </div>
         </div>
 
@@ -51,31 +48,6 @@
             <p>ⓒ2023. JEONG HYEON PARK. RIGHTS RESERVED</p>
         </div>
     </div>
-<script>
-    // contact 무빙 효과
-    document.addEventListener("DOMContentLoaded", function () {
-        const headerMenu = document.querySelector('.headerMenu');
-         const contactSection = document.querySelector('.contact');
-
-        document.getElementById('menu5').addEventListener('click', function (event) {
-            event.preventDefault();
-            headerMenu.classList.add('moveOut');
-            setTimeout(function () {
-                contactSection.classList.add('show');
-            }, 50);
-            contactSection.style.display = 'flex';
-        });
-
-        const menuItems = document.querySelectorAll('.headerMenu li:not(#menu5)');
-        menuItems.forEach(function (item) {
-            item.addEventListener('click', function () {
-                headerMenu.classList.remove('moveOut');
-                contactSection.classList.remove('show');
-            });
-        });
-    });
-</script>
-
 
 </body>
 
