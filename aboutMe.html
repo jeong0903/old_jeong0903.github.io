@@ -10,38 +10,104 @@
     <!-- 공통 -->
     <link rel="stylesheet" href="/assets/css/common.css">
     <script src="https://kit.fontawesome.com/ba16334cfd.js" crossorigin="anonymous"></script>
+    
 </head>
 
 <body>
     <div class="container">
-        <div class="header">
-            <ul class="headerMenu">
-                <li id="menu1"><a href="http://jeong0903.github.io/index.html">HOME</a></li>
-                <li id="menu2"><a href="http://jeong0903.github.io/aboutMe.html">ABOUT ME</a></li>
-                <li id="menu3"><a href="http://jeong0903.github.io/skill.html">SKILL</a></li>
-                <li id="menu4"><a href="http://jeong0903.github.io/project.html">PROJECT</a></li>
-                <li id="menu5"><a href="http://jeong0903.github.io/contact.html">CONTACT</a></li>
-            </ul>
+        <!-- ============ COMMON ============= -->
+        <div class="common">
+            <div class="banner">
+                <p id="banner1"> "KEEP CALM AND CODE ON"</p>
+            </div>
+            <div class="header">
+                <ul class="headerMenu">
+                    <li id="menu1"><a href="http://jeong0903.github.io/index.html">HOME</a></li>
+                    <li id="menu2"><a href="#aboutMe">ABOUT ME</a></li>
+                    <li id="menu3"><a href="#skill">SKILL</a></li>
+                    <li id="menu4"><a href="#project">PROJECT</a></li>
+                    <li id="menu5"><a href="http://jeong0903.github.io/contact.html">CONTACT</a></li>
+                </ul>
+            </div>
         </div>
-        <div class="banner">
-            <p id="banner1"> "KEEP CALM AND CODE ON"</p>
-        </div>
-        <div class="aboutMeWrap">
-            <p id="aboutMeTitle">ABOUT ME</p>
-            <p>안녕하세요. 매일 매일 <span id="Lv_1">Lv +1</span> 하는 개발자 박정현입니다.</p>
-            <p>개발하는 하루 하루가 즐거움으로 가득합니다.(๑・‿・๑)</p>
-            <p>감사합니다.🍀</p>
-            <br><p>#오늘보다_내일이_더_기대되는 #웹개발자 #박정현</p>
-            
-        </div>
+        <!-- ========== END =========== -->
 
+        <div class="">
+        <!-- ============ ABOUT ME ============= -->
+        <section class="aboutMe" id="aboutMe">
+            <div class="aboutMeWrap">
+                <p id="aboutMeTitle">ABOUT ME</p>
+                <p>안녕하세요. 매일 매일 <span id="Lv_1">Lv +1</span> 하는 개발자 박정현입니다.</p>
+                <p>개발하는 하루 하루가 즐거움으로 가득합니다.(๑・‿・๑)</p>
+                <p>감사합니다.🍀</p>
+                <br>
+                <p>#오늘보다_내일이_더_기대되는 #웹개발자 #박정현</p>
+            </div>
+        </section>
+        <!-- ========== END =========== -->
+
+
+        <!-- ============ SKILL ============= -->
+        <section class="skill" id="skill">
+            <div class="skillWrap">
+                <p id="skillTitle">SKILL</p>
+                <div class="skill_1">
+                    <p class="skillSort">BACKEND</p>
+                    Java | Python | Spring Framework | Spring Boot
+                </div>
+                <div class="skill_2">
+                    <p class="skillSort">FRONTEND</p>
+                    HTML | CSS3 | JavaScript(ES6) | REACT | REACT-NATIVE
+                </div>
+                <div class="skill_3">
+                    <p class="skillSort">VERSION CONTROL</p>
+                    GIT | GIT HUB
+                </div>
+                <div class="skill_4">
+                    <p class="skillSort">TEST</p>
+                    JUIT5 | POSTMAN
+                </div>
+                <div class="skillele">
+                    <div class="skill_5">
+                        <p class="skillSort">BUILD</p>
+                        GRADLE
+                    </div>
+                    <div class="skill_6">
+                        <p class="skillSort">DATABASE</p>
+                        ORACLE
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- ========== END =========== -->
+
+
+        <!-- ============ PROJECT ============= -->
+        <section class="project" id="project">
+            project
+        </section>
+        <!-- ========== END =========== -->
+        
         <div class="footer">
-            <p>ⓒ2023. JEONG HYEON PARK. RIGHTS RESERVED</p>
+            <p>ⓒ2023. <span id="footerName">JEONG HYEON PARK</span>. All Rights Reserved.</p>
         </div>
     </div>
+<script>
+    $(document).ready(function () {
+        // 메뉴 클릭 시 해당 섹션으로 부드럽게 스크롤되도록 설정
+        $('.headerMenu a').click(function (e) {
+            e.preventDefault(); // 기본 링크 이벤트 방지
 
-
-
+            var targetSection = $($(this).attr('href')); // 클릭한 메뉴의 href 값을 가져옴
+            if (targetSection.length) {
+                $('html, body').animate({
+                    scrollTop: targetSection.offset().top
+                }, 5000); // 부드럽게 스크롤되도록 애니메이션 추가 (1초)
+            }
+        });
+    });
+</script>
 </body>
 
 </html>

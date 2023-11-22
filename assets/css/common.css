@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     color: white;
+    font-family: 'S-CoreDream-3Light', sans-serif;
 }
 
 @font-face {
@@ -11,33 +12,45 @@
     font-style: normal;
 }
 
-body {
-    font-family: 'S-CoreDream-3Light', sans-serif;
-}
-
 .container {
-    background-image: url("/assets/img/bgimg_coding.jpg");
-    background-size: cover;
+    position: absolute;
     width: 100%;
-    height: 100vh;
-    position: relative;
+    height: 100%;
+    overflow: scroll;
 }
 
 .container::before {
     content: "";
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+    background-image: url("/assets/img/bgimg_coding.jpg");
+    background-size: cover;
+    filter: brightness(0.6);
+    /* 배경 이미지의 밝기 조절 (선택사항) */
 }
+/* ------------ common(header&banner) --------------------------------- */
+.common {
+    height: 200px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    padding-bottom: 20px;
+    background-color: #000;
+}
+
 .banner {
     top: 0;
     height: 200px;
     background-color: rgba(0, 0, 0, 0.6);
     display: flex;
     flex-direction: column;
+    position: absolute;
 }
 .banner #banner1 {
     position: absolute;
@@ -84,8 +97,35 @@ body {
         text-shadow: 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 50px #ff00de, 0 0 80px #ff00de, 0 0 90px #ff00de, 0 0 110px #ff00de, 0 0 170px #ff00de;
     }
 }
+
+/* ------------ section ------------------------------------------------- */
+.aboutMe{
+    margin-top: 200px;
+}
+
+.aboutMe,
+.skill,
+.project {
+    position: relative;
+}
+
+.aboutMeWrap,
+.skillWrap,
+.projectWrap {
+    padding: 100px;
+}
+
+/* ------------ footer ------------------------------------------------- */
 .footer {
+    position: fixed;
     bottom: 0;
+    left: 0;
+    width: 100%;
     height: 10%;
     background-color: rgba(0, 0, 0, 0.6);
+}
+
+#footerName{
+    font-weight: 900;
+    color: aquamarine;
 }
