@@ -28,12 +28,15 @@
 .mainContainer{
     overflow-y: scroll;
 }
-/* aboutMe 본문 */
 
+/* aboutMe 본문 */
+.aboutMe{
+    padding-top: 200px;
+}
 .aboutMeWrap{
-    background-color: rgba(0, 0, 0, 0.6);
     position: relative;
     line-height: 30px;
+    padding-top: 200px;
 }
 .aboutMeWrap #aboutMeTitle{
     font-weight: 900;
@@ -53,8 +56,6 @@
     height: auto;
 }
 .skillWrap {
-    padding: 50px;
-    background-color: rgba(0, 0, 0, 0.6);
     line-height: 30px;
 }
 
@@ -65,4 +66,47 @@
     border-bottom: 1px solid #fff;
     margin-bottom: 50px;
     padding-bottom: 10px;
+}
+
+/* project */
+.project{
+    height: auto;
+}
+.projectWrap{
+    margin-bottom: 100px;
+    padding-bottom: 100px;
+}
+.projectWrap #projectTitle{
+    font-weight: 900;
+    font-size: 2.5rem;
+    letter-spacing: 10px;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 50px;
+    padding-bottom: 10px;
+}
+.projectWrap .projectSort{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.projectWrap .projectSort .hama, .toy, .app{
+    border: 1px solid #fff;
+    width: 400px;
+    height: 300px;
+    border-radius: 10px;
+}
+.hameWrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+}
+.hama{
+    background-image: url(/assets/img/hama.PNG);
+    background-size: cover;
+    margin-bottom: 10px;
+}
+.hameWrap p:hover{
+    color: aquamarine;
 }

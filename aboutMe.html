@@ -10,7 +10,7 @@
     <!-- 공통 -->
     <link rel="stylesheet" href="/assets/css/common.css">
     <script src="https://kit.fontawesome.com/ba16334cfd.js" crossorigin="anonymous"></script>
-    
+
 </head>
 
 <body>
@@ -33,81 +33,105 @@
         <!-- ========== END =========== -->
 
         <div class="">
-        <!-- ============ ABOUT ME ============= -->
-        <section class="aboutMe" id="aboutMe">
-            <div class="aboutMeWrap">
-                <p id="aboutMeTitle">ABOUT ME</p>
-                <p>안녕하세요. 매일 매일 <span id="Lv_1">Lv +1</span> 하는 개발자 박정현입니다.</p>
-                <p>개발하는 하루 하루가 즐거움으로 가득합니다.(๑・‿・๑)</p>
-                <p>감사합니다.🍀</p>
-                <br>
-                <p>#오늘보다_내일이_더_기대되는 #웹개발자 #박정현</p>
-            </div>
-        </section>
-        <!-- ========== END =========== -->
+            <!-- ============ ABOUT ME ============= -->
+            <section class="aboutMe" id="aboutMe">
+                <div class="aboutMeWrap">
+                    <p id="aboutMeTitle">ABOUT ME</p>
+                    <p>안녕하세요. 매일 매일 <span id="Lv_1">Lv +1</span> 하는 개발자 박정현입니다.</p>
+                    <p>개발하는 하루 하루가 즐거움으로 가득합니다.(๑・‿・๑)</p>
+                    <p>감사합니다.🍀</p>
+                    <br>
+                    <p>#오늘보다_내일이_더_기대되는 #웹개발자 #박정현</p>
+                </div>
+            </section>
+            <!-- ========== END =========== -->
 
 
-        <!-- ============ SKILL ============= -->
-        <section class="skill" id="skill">
-            <div class="skillWrap">
-                <p id="skillTitle">SKILL</p>
-                <div class="skill_1">
-                    <p class="skillSort">BACKEND</p>
-                    Java | Python | Spring Framework | Spring Boot
-                </div>
-                <div class="skill_2">
-                    <p class="skillSort">FRONTEND</p>
-                    HTML | CSS3 | JavaScript(ES6) | REACT | REACT-NATIVE
-                </div>
-                <div class="skill_3">
-                    <p class="skillSort">VERSION CONTROL</p>
-                    GIT | GIT HUB
-                </div>
-                <div class="skill_4">
-                    <p class="skillSort">TEST</p>
-                    JUIT5 | POSTMAN
-                </div>
-                <div class="skillele">
-                    <div class="skill_5">
-                        <p class="skillSort">BUILD</p>
-                        GRADLE
+            <!-- ============ SKILL ============= -->
+            <section class="skill" id="skill">
+                <div class="skillWrap">
+                    <p id="skillTitle">SKILL</p>
+                    <div class="skill_1">
+                        <p class="skillSort">BACKEND</p>
+                        Java | Python | Spring Framework | Spring Boot
                     </div>
-                    <div class="skill_6">
-                        <p class="skillSort">DATABASE</p>
-                        ORACLE
+                    <div class="skill_2">
+                        <p class="skillSort">FRONTEND</p>
+                        HTML | CSS3 | JavaScript(ES6) | REACT | REACT-NATIVE
+                    </div>
+                    <div class="skill_3">
+                        <p class="skillSort">VERSION CONTROL</p>
+                        GIT | GIT HUB
+                    </div>
+                    <div class="skill_4">
+                        <p class="skillSort">TEST</p>
+                        JUIT5 | POSTMAN
+                    </div>
+                    <div class="skillele">
+                        <div class="skill_5">
+                            <p class="skillSort">BUILD</p>
+                            GRADLE
+                        </div>
+                        <div class="skill_6">
+                            <p class="skillSort">DATABASE</p>
+                            ORACLE
+                        </div>
                     </div>
                 </div>
+            </section>
+
+            <!-- ========== END =========== -->
+
+
+            <!-- ============ PROJECT ============= -->
+            <section class="project" id="project">
+                <div class="projectWrap">
+                    <p id="projectTitle">PROJECT</p>
+                    <div class="projectSort">
+                        <div class="hameWrap"> <a href="./assets/html/hama.html">
+                        <p class="hama"></p>
+                        <p>| 함께하마 협업 프로젝트 |</p></a>
+                        </div>
+                        <div class="toy">
+                            <!-- <div class="tetris">
+                                토이1
+                            </div>
+                            <div class="painter">
+                                토이2
+                            </div>
+                            <div class="dino">
+                                토이3
+                            </div> -->
+                            바닐라 JS
+                        </div>
+                        <div class="app">
+                            RN
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ========== END =========== -->
+
+            <div class="footer">
+                <p>ⓒ2023. <span id="footerName">JEONG HYEON PARK</span>. All Rights Reserved.</p>
             </div>
-        </section>
-        
-        <!-- ========== END =========== -->
-
-
-        <!-- ============ PROJECT ============= -->
-        <section class="project" id="project">
-            project
-        </section>
-        <!-- ========== END =========== -->
-        
-        <div class="footer">
-            <p>ⓒ2023. <span id="footerName">JEONG HYEON PARK</span>. All Rights Reserved.</p>
         </div>
-    </div>
-<script>
-    $(document).ready(function () {
-        // 메뉴 클릭 시 해당 섹션으로 부드럽게 스크롤되도록 설정
-        $('.headerMenu a').click(function (e) {
-            e.preventDefault(); // 기본 링크 이벤트 방지
 
-            var targetSection = $($(this).attr('href')); // 클릭한 메뉴의 href 값을 가져옴
-            if (targetSection.length) {
-                $('html, body').animate({
-                    scrollTop: targetSection.offset().top
-                }, 5000); // 부드럽게 스크롤되도록 애니메이션 추가 (1초)
-            }
-        });
-    });
-</script>
+        <!-- 해당 페이지 스크롤 -->
+        <script>
+            $(document).ready(function () {
+                $('.headerMenu a').click(function (e) {
+                    e.preventDefault();
+
+                    var targetSection = $($(this).attr('href'));
+                    if (targetSection.length) {
+                        $('html, body').animate({
+                            scrollTop: targetSection.offset().top
+                        }, 5000);
+                    }
+                });
+            });
+        </script>
 </body>
 
 </html>
