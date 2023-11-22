@@ -1,18 +1,48 @@
-/* 프로젝트 타이틀 */
-li{
-    list-style: none;
-}
-#hamaInfo{
+/* 프로젝트 배너 */
+
+.banner2{
     position: relative;
     top: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
 }
-.hama1{
-    padding-left: 50px;
+.banner2 .hamaName{
+    font-weight: bolder;
+    margin-right: 50px;
+    font-size: 25px;
+    color: rgba(255, 255, 255, 0.9);
 }
+.hamaInfo{
+    margin-right: 50px;
+    color: rgba(255, 255, 255, 0.9);
+}
+#hamaInfo1, #hamaInfo2, #hamaInfo3, #hamaInfo4{
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #003;
+    margin-right: 5px;
+    padding: 0 5px;
+}
+
+/* 프로젝트 타이틀 */
 .hamaMain{
     background-color: rgba(0, 0, 0, 0.6);
     margin-top: 200px;
     padding: 50px 100px;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+.hama1{
+    padding-left: 50px;
+}
+
+.hamaTitle i {
+    font-size: 2rem;
+    position: relative;
+    top: -10px;
+    margin-right: 10px;
 }
 
 .hamaTitle{
@@ -22,39 +52,59 @@ li{
     font-weight: 900;
     border-bottom: 1px solid #fff;
     margin-bottom: 20px;
+    width: 100%;
 }
-.hamaTitle i {
-    font-size: 2rem;
-    position: relative;
-    top: -10px;
-    margin-right: 10px;
-}
+
 button{
-    background-color: #000;
+    background-color: #003;
     width: 100px;
     height: 30px;
     margin: 10px 20px;
     cursor: pointer;
 }
+button:hover{
+    background-color: #fff;
+}
+button:hover a{
+    color: #003;
+}
 
-.hamaMenu a{
+.links a{
     text-decoration: none;
 }
 
-.subject{
+/* 프로젝트 본문 */
+li {
+    list-style: none;
+}
+
+.fa-forward, .fa-backward{
+    font-size: 20px;
+}
+.fa-forward:hover,
+.fa-backward:hover{
+    font-size: 25px;
+    transition: .2s ease-in-out;
+    cursor: pointer;
+}
+.subjects{
     font-size: 2rem;
     font-weight: 900;
     margin: 50px 0 10px;
 }
-/* 메인 메뉴 */
-.hama1 img{
+
+.hamaProject img{
     width: 800px;
-    height: 500px;
+    height: 450px;
     display: flex;
     flex-direction: row;
-    margin-right: 20px;
+    margin: 0 300px;
 }
 .imgWrap{
     display: flex;
+    justify-content: center;
+}
 
+section{
+    margin-bottom: 100px;
 }

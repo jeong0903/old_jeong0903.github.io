@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,12 +9,21 @@
     <link rel="stylesheet" href="/assets/css/common.css">
     <script src="https://kit.fontawesome.com/ba16334cfd.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <div class="container">
         <div class="common">
             <div class="banner">
-                <p id="banner1"> "KEEP CALM AND CODE ON"</p>
-                <p id="hamaInfo">함께하마 PROJECT INFORMATION</p>
+                <div id="banner1"> "KEEP CALM AND CODE ON"</div>
+                <div class="banner2">
+                    <span class="hamaName"> INFORMATION </span>
+                    <span class="hamaInfoWrap">
+                        <span class="hamaInfo"><span id="hamaInfo1">Project Name</span> 함께하마 프로젝트</span>
+                        <span class="hamaInfo"><span id="hamaInfo2">Team Member</span> 7 </span>
+                        <span class="hamaInfo"><span id="hamaInfo3">Position</span> 웹사이트 UI구현 </span>
+                        <span class="hamaInfo"><span id="hamaInfo4">Project period</span> 2023.09.07 ~ 2023.11.10</span>
+                    </span>
+                </div>
             </div>
         </div>
         <div class="hamaMain">
@@ -25,56 +35,48 @@
                     <button class="links"><a href="https://jeong0903.github.io/aboutMe.html#project">#돌아가기</a></button>
                 </div>
             </div>
+
+            <!-- 프로젝트 -->
             <div class="hamaContent">
-                
-                <!-- 프로젝트 소개 -->
-                <section class="hama1" id="hama1">
-                    <li class="aim_target"><p class="subject">목적 / 목표</p>
+                <div class="hamaProject">
+                    <section class="aim_target" id="aim_target">
+                        <p class="subjects">목적 / 목표 </p>
                         <div class="imgWrap">
-                        <img id="aim01" src="/assets/img/aim01.PNG"> </img>
-                        <img id="aim02" src="/assets/img/aim02.PNG"> </img>
-                        <img id="aim03" src="/assets/img/aim03.PNG"> </img>
-                        <img id="aim04" src="/assets/img/aim04.PNG"> </img>
+                            <img id="aim01" src="/assets/img/aim01.PNG" > </img>
+                            <img id="aim02" src="/assets/img/aim02.PNG"> </img>
+                            <img id="aim03" src="/assets/img/aim03.PNG"> </img>
+                            <img id="aim04" src="/assets/img/aim04.PNG"> </img>
                         </div>
-                    </li>
+                    </section>
 
-                    <li class="functional">
-                        <p class="subject"> 기능정의서 </p>
+                    <section class="functional" id="functional">
+                        <p class="subjects"> 기능정의서 </p>
                         <img id="functional01" src="/assets/img/functional.PNG" alt="">
-                    </li>
-                    <li class="process">
-                        <p class="subject"> 프로세스 </p>
+                    </section>
+
+                    <section class="process" id="process">
+                        <p class="subjects"> 프로세스 </p>
                         <img id="process01" src="/assets/img/process.PNG" alt="">
-                    </li>
-                    <li class="erd">
-                        <p class="subject"> 데이터베이스 </p>
+                    </section>
+
+                    <section class="erd" id="erd">
+                        <p class="subjects"> 데이터베이스 </p>
                         <div class="imgWrap">
-                        <img id="erd01" src="/assets/img/erd01.PNG" alt="">
-                        <img id="erd02" src="/assets/img/erd02.PNG" alt="">
+                            <img id="erd01" src="/assets/img/erd01.PNG" alt="">
+                            <img id="erd02" src="/assets/img/erd02.PNG" alt="">
                         </div>
-                    </li>
-                    <li class="tech">
-                        <p class="subject"> 소요기술 </p>
+                    </section>
+
+                    <section class="tech" id="tech">
+                        <p class="subjects"> 소요기술</p>
                         <img id="tech01" src="/assets/img/tech.PNG" alt="">
-                    </li>
-                </section>
-
-                <!-- 소스 코드 -->
-                <section class="hama2" id="hama2">
-                    <div id=""></div>
-                    <div id=""></div>
-                </section>
-
-                <!-- 시연 영상 -->
-                <div id=""></div>
-                <div id=""></div>
-                <div id=""></div>
-                <div id=""></div>
+                    </section>
+                </div>
             </div>
         </div>
         <div class="footer">
             <p>ⓒ2023. <span id="footerName">JEONG HYEON PARK</span>. All Rights Reserved.</p>
         </div>
-    </div>
 </body>
+
 </html>
