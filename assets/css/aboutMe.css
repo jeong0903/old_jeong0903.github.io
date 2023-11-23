@@ -33,7 +33,12 @@
     margin-bottom: 50px;
     padding-bottom: 10px;
 }
-
+.Introduction{
+    width: 800px;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px 30px;
+    border-radius: 10px;
+}
 #Lv_1{
     color: aquamarine;
     font-weight: 900;
