@@ -44,6 +44,11 @@
     align-items: center;
 }
 
+#banner1 a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
 .banner {
     top: 0;
     height: 200px;
