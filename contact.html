@@ -25,9 +25,9 @@
         <div class="header">
             <ul class="headerMenu">
                 <li id="menu1"><a href="#">HOME</a></li>
-                <li id="menu2"><a href="http://jeong0903.github.io/aboutMe.html">ABOUT ME</a></li>
-                <li id="menu3"><a href="http://jeong0903.github.io/skill.html">SKILL</a></li>
-                <li id="menu4"><a href="http://jeong0903.github.io/project.html">PROJECT</a></li>
+                <li id="menu2"><a href="https://jeong0903.github.io/aboutMe.html#aboutMe">ABOUT ME</a></li>
+                <li id="menu3"><a href="https://jeong0903.github.io/aboutMe.html#skill">SKILL</a></li>
+                <li id="menu4"><a href="https://jeong0903.github.io/aboutMe.html#project">PROJECT</a></li>
                 <li id="menu5"><a href="#">CONTACT</a></li>
             </ul>
         </div>
@@ -52,16 +52,21 @@
     <script>
         // menu1 클릭 시 효과 적용
         document.addEventListener("DOMContentLoaded", function () {
-            const headerMenu = document.querySelector('.headerMenu');
-            const contactSection = document.querySelector('.contact');
+                const headerMenu = document.querySelector('.headerMenu');
+                const contactSection = document.querySelector('.contact');
 
-            document.getElementById('menu1').addEventListener('click', function (event) {
-                event.preventDefault();
-                contactSection.classList.add('fade-out'); // contact 섹션 투명도를 0으로 변경하여 fade-out 효과 적용
-                headerMenu.classList.add('slideRight'); // headerMenu 오른쪽으로 이동하는 효과 클래스 추가
+                document.getElementById('menu5').addEventListener('click', function (event) {
+                    event.preventDefault();
+                    contactSection.classList.remove('fade-out');
+                    headerMenu.classList.remove('slideRight');
+                });
 
+                document.getElementById('menu1').addEventListener('click', function (event) {
+                    event.preventDefault();
+                    contactSection.classList.add('fade-out');
+                    headerMenu.classList.add('slideRight');
+                });
             });
-        });
     </script>
 </body>
 

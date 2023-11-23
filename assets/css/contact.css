@@ -115,7 +115,5 @@
 }
 .fade-out {
     opacity: 0;
-    /* 투명도 조정 */
-    transition: opacity 1s ease-in-out;
-    /* 투명도가 변하는 데 걸리는 시간 및 효과 */
+    transition: opacity 2s ease-in-out;
 }
