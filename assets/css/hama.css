@@ -26,9 +26,8 @@
 
 /* 프로젝트 타이틀 */
 .hamaMain{
-    background-color: rgba(0, 0, 0, 0.6);
     margin-top: 200px;
-    padding: 50px 100px;
+    padding: 30px 100px;
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
@@ -62,9 +61,12 @@ button{
     margin: 10px 20px;
     cursor: pointer;
 }
+
+.hama_button:hover,
 button:hover{
     background-color: #fff;
 }
+.hama_button:hover,
 button:hover a{
     color: #003;
 }
@@ -74,37 +76,25 @@ button:hover a{
 }
 
 /* 프로젝트 본문 */
-li {
-    list-style: none;
+.hamaProject{
+    display: flex;
+    margin-top: 18px;
+    padding: 50px 100px;
+    border: 1px solid #fff;
+    background-color: rgba(255, 255, 255, 0.4);
 }
-
-.fa-forward, .fa-backward{
-    font-size: 20px;
-}
-.fa-forward:hover,
-.fa-backward:hover{
-    font-size: 25px;
-    transition: .2s ease-in-out;
-    cursor: pointer;
-}
-.subjects{
-    font-size: 2rem;
-    font-weight: 900;
-    margin: 50px 0 10px;
-}
-
 .hamaProject img{
-    width: 800px;
-    height: 450px;
-    display: flex;
-    flex-direction: row;
-    margin: 0 300px;
+    width: 600px;
+    height: 350px;
+    margin-right: 100px;
+    border-radius: 10px;
 }
-.imgWrap{
+.hama_buttons{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
 }
-
-section{
-    margin-bottom: 100px;
+.hama_slides{
+    display: flex;
+    overflow-x: scroll;
+    padding-bottom: 30px;
 }

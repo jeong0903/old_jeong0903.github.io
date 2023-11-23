@@ -39,44 +39,79 @@
             <!-- 프로젝트 -->
             <div class="hamaContent">
                 <div class="hamaProject">
-                    <section class="aim_target" id="aim_target">
-                        <p class="subjects">목적 / 목표 </p>
-                        <div class="imgWrap">
-                            <img id="aim01" src="/assets/img/aim01.PNG"> </img>
-                            <img id="aim02" src="/assets/img/aim02.PNG"> </img>
-                            <img id="aim03" src="/assets/img/aim03.PNG"> </img>
-                            <img id="aim04" src="/assets/img/aim04.PNG"> </img>
-                        </div>
-                    </section>
-
-                    <section class="functional" id="functional">
-                        <p class="subjects"> 기능정의서 </p>
-                        <img id="functional01" src="/assets/img/functional.PNG" alt="">
-                    </section>
-
-                    <section class="process" id="process">
-                        <p class="subjects"> 프로세스 </p>
-                        <img id="process01" src="/assets/img/process.PNG" alt="">
-                    </section>
-
-                    <section class="erd" id="erd">
-                        <p class="subjects"> 데이터베이스 </p>
-                        <div class="imgWrap">
-                            <img id="erd01" src="/assets/img/erd01.PNG" alt="">
-                            <img id="erd02" src="/assets/img/erd02.PNG" alt="">
-                        </div>
-                    </section>
-
-                    <section class="tech" id="tech">
-                        <p class="subjects"> 소요기술</p>
-                        <img id="tech01" src="/assets/img/tech.PNG" alt="">
-                    </section>
+                    <div class="hama_buttons">
+                        <button class="hama_button" id="hama_button1">프로젝트 목표</button>
+                        <button class="hama_button" id="hama_button2">기능 정의서</button>
+                        <button class="hama_button" id="hama_button3">프로세스</button>
+                        <button class="hama_button" id="hama_button4">데이터베이스</button>
+                        <button class="hama_button" id="hama_button5">소요기술</button>
+                    </div>
+                    <div class="slideContainer hama_slides">
+                        <img class="hama_img" id="hama_img1" src="/assets/img/prj_cover.PNG" alt="">
+                        <img class="hama_img" id="hama_img2" src="/assets/img/prj_aim03.PNG" alt="">
+                        <img class="hama_img" id="hama_img3" src="/assets/img/prj_aim04.PNG" alt="">
+                        <img class="hama_img" id="hama_img4" src="/assets/img/prj_functional.PNG" alt="">
+                        <img class="hama_img" id="hama_img5" src="/assets/img/prj_process.PNG" alt="">
+                        <img class="hama_img" id="hama_img6" src="/assets/img/prj_erd01.PNG" alt="">
+                        <img class="hama_img" id="hama_img7" src="/assets/img/prj_erd02.PNG" alt="">
+                        <img class="hama_img" id="hama_img8" src="/assets/img/prj_tech.PNG" alt="">
+                        <img class="hama_img" id="hama_img9" src="/assets/img/prj_end.PNG" alt="">
+                    </div>
                 </div>
             </div>
         </div>
         <div class="footer">
             <p>ⓒ2023. <span id="footerName">JEONG HYEON PARK</span>. All Rights Reserved.</p>
         </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function(){
+            const hamaAim = document.getElementById('hama_button1');
+            const hamaFunc = document.getElementById('hama_button2');
+            const hamaProcess = document.getElementById('hama_button3');
+            const hamaErd = document.getElementById('hama_button4');
+            const hamaTech = document.getElementById('hama_button5');
+            
+            const slideContainer = document.querySelector(".hama_slides");
+
+            hamaAim.addEventListener('click', function(event){
+                event.preventDefault();
+                console.log('hama_button1 click');
+                scrollToImage('hama_img2', 700);
+            })
+            hamaFunc.addEventListener('click', function(event){
+                event.preventDefault();
+                console.log('hama_button2 click');
+                scrollToImage('hama_img4', 2100);
+            })
+            hamaProcess.addEventListener('click', function(event){
+                event.preventDefault();
+                console.log('hama_button3 click');
+                scrollToImage('hama_img5', 2800);
+            })
+            hamaErd.addEventListener('click', function(event){
+                event.preventDefault();
+                console.log('hama_button4 click');
+                scrollToImage('hama_img6', 3500);
+            })
+            hamaTech.addEventListener('click', function(event){
+                event.preventDefault();
+                console.log('hama_button5 click');
+                scrollToImage('hama_img8', 4900);
+            })
+
+            function scrollToImage(imageId, scrollXPos) {
+                const image = document.getElementById(imageId);
+                if (image && slideContainer) {
+                    const imageOffsetLeft = image.offsetLeft;
+                    slideContainer.scrollTo({
+                        left: scrollXPos,
+                        behavior: 'smooth' // 부드러운 스크롤
+                    });
+                }
+            }
+        });
+    </script>
 </body>
 
 </html>
