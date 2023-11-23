@@ -107,3 +107,15 @@
     display: flex;
     align-items: first baseline;
 }
+
+/* home클릭시 무빙 효과 */
+.slideRight {
+    transform: translateX(435%);
+    transition: transform 2s ease-in-out;
+}
+.fade-out {
+    opacity: 0;
+    /* 투명도 조정 */
+    transition: opacity 1s ease-in-out;
+    /* 투명도가 변하는 데 걸리는 시간 및 효과 */
+}
