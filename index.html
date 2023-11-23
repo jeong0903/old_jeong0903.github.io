@@ -28,7 +28,7 @@
 
         <div class="header">
             <ul class="headerMenu">
-                <li id="menu1"><a href="https://jeong0903.github.io/index.html">HOME</a></li>
+                <li id="menu1"><a href="#">HOME</a></li>
                 <li id="menu2"><a href="https://jeong0903.github.io/aboutMe.html#aboutMe">ABOUT ME</a></li>
                 <li id="menu3"><a href="https://jeong0903.github.io/aboutMe.html#skill">SKILL</a></li>
                 <li id="menu4"><a href="https://jeong0903.github.io/aboutMe.html#project">PROJECT</a></li>
@@ -57,26 +57,34 @@
     <script>
         // contact 무빙 효과
         document.addEventListener("DOMContentLoaded", function () {
-            const headerMenu = document.querySelector('.headerMenu');
-            const contactSection = document.querySelector('.contact');
+                const headerMenu = document.querySelector('.headerMenu');
+                const contactSection = document.querySelector('.contact');
 
-            document.getElementById('menu5').addEventListener('click', function (event) {
-                event.preventDefault();
-                headerMenu.classList.add('moveOut');
-                setTimeout(function () {
-                    contactSection.classList.add('show');
-                }, 50);
-                contactSection.style.display = 'flex';
-            });
+                // CONTACT 메뉴 클릭 시
+                document.getElementById('menu5').addEventListener('click', function (event) {
+                    event.preventDefault();
+                    headerMenu.classList.add('moveOut');
+                    setTimeout(function () {
+                        contactSection.classList.add('show');
+                    }, 50);
+                    contactSection.style.display = 'flex';
+                });
 
-            const menuItems = document.querySelectorAll('.headerMenu li:not(#menu5)');
-            menuItems.forEach(function (item) {
-                item.addEventListener('click', function () {
-                    headerMenu.classList.remove('moveOut');
-                    contactSection.classList.remove('show');
+                // 다른 메뉴 클릭 시
+                const menuItems = document.querySelectorAll('.headerMenu li:not(#menu5)');
+                menuItems.forEach(function (item) {
+                    item.addEventListener('click', function () {
+                        if (contactSection.classList.contains('show')) {
+                            headerMenu.classList.remove('moveOut');
+                            contactSection.classList.remove('show');
+                            setTimeout(function () {
+                                contactSection.style.display = 'none';
+                            }, 500); // 0.5초 후 CONTACT 창을 숨깁니다. 애니메이션이 완료되면 숨김 처리합니다.
+                        }
+                    });
                 });
             });
-        });
+
     </script>
 </body>
 

@@ -1,14 +1,3 @@
-.header,
-.banner,
-.footer {
-    width: 100%;
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
 .banner {
     height: 200px;
 }
@@ -25,18 +14,22 @@
     margin-bottom: 20px;
 }
 
+.headerMenu li{
+    margin: 20px 0;
+    font-size: 2.5rem;
+    list-style: none;
+}
+
 .headerMenu {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: end;
+    margin-left: 72px;
     transition: transform 0.5s ease-in-out;
+    width: 300px;
 }
-.headerMenu li{
-    margin: 20px 0;
-    text-align: right;
-    font-size: 2.5rem;
-    list-style: none;
-}
+
 .headerMenu a{
     text-decoration: none;
 }
@@ -57,41 +50,43 @@
     }
 }
 .header {
-    top:55%;
-    transform: translateY(-50%);
+    height: calc(100vh - 300px);
     display: flex;
-    flex-direction: row;
-    justify-content: left;
-    left: 10%;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    padding-right: 10%;
 }
 
 /* CONTACT */
 .contact {
-    position: relative;
-    display: flex;
+    position: absolute;
+    top: 30%;
     flex-direction: column;
     align-items: baseline;
     width: 800px;
     height: 400px;
+    margin-left: 500px;
     border-radius: 10px;
     padding: 80px 150px 50px;
     font-size: 1.5rem;
     background-color: rgba(0, 0, 0, 0.6);
-    left: 30%;
-    top: 30%;
-    transition: opacity 2s ease-in-out;
 }
+
 .contactWrap p {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
+
 .contactWrap i {
     margin-right: 20px;
     font-size: 30px;
 }
+
 .contacWrap a {
     text-decoration: none;
 }
-#contactTitle{
+
+#contactTitle {
     font-weight: 900;
     font-size: 2.5rem;
     letter-spacing: 10px;
@@ -107,18 +102,8 @@
     margin-right: 30px;
     text-align: right;
 }
-/* *{outline: 1px solid gray;} */
-.contactWrap p{
+
+.contactWrap p {
     display: flex;
     align-items: first baseline;
-
-}
-/* contact 클릭 : 메뉴이동과 콘택트 창 */
-
-#gitBlog , #emailAddress {
-    text-decoration: none;
-}
-
-#gitBlog:hover, #emailAddress:hover{
-    color: aquamarine;
 }
