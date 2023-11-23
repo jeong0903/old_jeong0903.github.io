@@ -9,7 +9,7 @@
     <!-- <link rel="stylesheet" href="/jeong0903.github.io/style.css"> -->
     <!-- 공통 -->
     <link rel="stylesheet" href="/assets/css/common.css">
-    <script src="https://kit.fontawesome.com/ba16334cfd.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/ba16334cfd.js" crossorigin="anonymous"></script> 
 
 </head>
 
@@ -32,7 +32,7 @@
         </div>
         <!-- ========== END =========== -->
 
-        <div class="">
+        <div class="wrap">
             <!-- ============ ABOUT ME ============= -->
             <section class="aboutMe" id="aboutMe">
                 <div class="aboutMeWrap">
@@ -98,10 +98,12 @@
                         <div class="skill skill_1">
                             <p class="skillSort"><i class="fa-solid fa-code" style="color: #ffffff;"></i> BACKEND</p>
                             <div class="icons">
-                                <span class="iconWrap"><img class="icon" src="/assets/img/icn_java.png" alt=""> Java</span>
+                                <span class="iconWrap"><img class="icon" src="/assets/img/icn_java.png" alt="">
+                                    Java</span>
                                 <span class="iconWrap"><img class="icon" src="/assets/img/icn_python.png" alt="">
                                     Python</span>
-                                <span class="iconWrap"><img class="icon" src="/assets/img/icn_spring.png" alt=""> Spring</span>
+                                <span class="iconWrap"><img class="icon" src="/assets/img/icn_spring.png" alt="">
+                                    Spring</span>
                                 <span class="iconWrap"><img class="icon" src="/assets/img/icn_spring boot.png" alt="">
                                     Spring Boot</span>
                             </div>
@@ -109,8 +111,10 @@
                         <div class="skill skill_2">
                             <p class="skillSort"><i class="fa-solid fa-code" style="color: #ffffff;"></i>FRONTEND</p>
                             <div class="icons">
-                                <span class="iconWrap"><img class="icon" src="/assets/img/icn_html.png" alt=""> HTML </span>
-                                <span class="iconWrap"><img class="icon" src="/assets/img/icn_css.png" alt=""> CSS3 </span>
+                                <span class="iconWrap"><img class="icon" src="/assets/img/icn_html.png" alt=""> HTML
+                                </span>
+                                <span class="iconWrap"><img class="icon" src="/assets/img/icn_css.png" alt=""> CSS3
+                                </span>
                                 <span class="iconWrap"><img class="icon" src="/assets/img/icn_js.png" alt="">
                                     JS(ES6) </span>
                                 <span class="iconWrap"><img class="icon" src="/assets/img/icn_rn.png" alt="">
@@ -164,7 +168,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                 </div>
             </section>
 
@@ -175,14 +179,18 @@
             <section class="project" id="project">
                 <div class="projectWrap">
                     <p id="projectTitle">PROJECT</p>
-                    <div class="projectSort">
-                        <div class="hameWrap">
-                            <a href="./assets/html/hama.html">
-                                <p class="hama"></p>
-                                <p> 함께하마 협업 프로젝트 </p>
-                            </a>
-                        </div>
-                        <div class="toy">
+                    <div class="projectList">
+                        <a class="hameWrap" href="./assets/html/hama.html">
+                            <p class="hama">
+                                <div class="screen"><span>보러가기</span></div>
+                            </p>
+                            <p id="prj1"> 함께하마 협업 프로젝트 </p>
+                        </a>
+                        <a class="toyWrap" href="#">
+                            <p class="toy">
+                                <div class="screen"><span>보러가기</span></div>
+                            </p>
+                            <p id="prj2"> 개인 프로젝트 </p>
                             <!-- <div class="tetris">
                                 토이1
                             </div>
@@ -192,11 +200,13 @@
                             <div class="dino">
                                 토이3
                             </div> -->
-                            바닐라 JS
-                        </div>
-                        <div class="app">
-                            RN
-                        </div>
+                        </a>
+                        <a class="appWrap" href="#">
+                            <p class="app">
+                                <div class="screen"><span>보러가기</span></div>
+                            </p>
+                            <p id="prj3">RN</p>
+                        </a>
                     </div>
                 </div>
             </section>
@@ -206,15 +216,44 @@
                 <p>ⓒ2023. <span id="footerName">JEONG HYEON PARK</span>. All Rights Reserved.</p>
             </div>
         </div>
+    </div>
 
-        <script>
-            // let edu_rsm = document.querySelectorAll('.edu_rsm')
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+                const sections = document.querySelectorAll("section");
+                let aboutMeTop = sections[0].offsetTop;
+                let skillsTop = sections[1].offsetTop;
+                let projectTop = sections[2].offsetTop;
 
-            window.addEventListener('scroll', function () {
-                let value = window.scrollY
-                console.log("scrollY", value);
+                const additionalOffset = 200; // 변경하고자 하는 값
+
+                skillsTop -= additionalOffset;
+
+                const menu2 = document.getElementById('menu2');
+                const menu3 = document.getElementById('menu3');
+                const menu4 = document.getElementById('menu4');
+
+                const $container = document.querySelector('.container');
+
+                menu2.addEventListener('click', function (event) {
+                    event.preventDefault();
+                    console.log('menu2 click');
+                    $container.scroll({ top: aboutMeTop, behavior: 'smooth' });
+                });
+
+                menu3.addEventListener('click', function (event) {
+                    event.preventDefault();
+                    console.log('menu3 click');
+                    $container.scroll({ top: skillsTop, behavior: 'smooth' });
+                });
+
+                menu4.addEventListener('click', function (event) {
+                    event.preventDefault();
+                    console.log('menu4 click');
+                    $container.scroll({ top: projectTop, behavior: 'smooth' });
+                });
             });
-        </script>
+    </script>
 </body>
 
 </html>

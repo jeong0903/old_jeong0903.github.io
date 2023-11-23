@@ -146,32 +146,53 @@
     margin-bottom: 50px;
     padding-bottom: 10px;
 }
-.projectWrap .projectSort{
+.projectWrap .projectList{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-.projectWrap .projectSort .hama, .toy, .app{
+.projectWrap .projectList .hama, .toy, .app, .screen{
     border: 1px solid #fff;
     width: 400px;
     height: 300px;
     border-radius: 10px;
 }
-.hameWrap{
+.hameWrap, .toyWrap, .appWrap{
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
     cursor: pointer;
+    position: relative;
 }
 .hama{
     background-image: url(/assets/img/prj_hama.PNG);
     background-size: cover;
     margin-bottom: 10px;
 }
-.hameWrap{
-    margin-right: 20px;
+.toyWrap{
+    margin-bottom: 10px;
 }
-.hameWrap a{
+.appWrap{
+    margin-bottom: 10px;
+}
+.projectList a{
     text-decoration: none;
+}
+.screen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 2;
+    top:1px;
+    left: 1px;
+    overflow: hidden;
+    transition: .2s ease-in;
+    opacity: 1;
+}
+.screen:hover{
+    /* transition: 2s ease-in; */
+    opacity: 0;
 }
