@@ -50,9 +50,35 @@
     color: aquamarine;
     font-weight: 900;
 }
+.aboutMe h2{
+    margin-bottom: 10px;
+}
+/* *{outline: 1px solid gray;} */
+#edu_rsm01, #edu_rsm02, #edu_rsm03, #edu_rsm04{
+    display: flex;
+    flex-direction: column;
+    border-left: 2px solid #fff;
+    height: 80px;
+    padding: 0 20px 50px;
+    margin: 20px;
+}
+.edu_rsm{
+    opacity: 1;
+    animation: fade-in 1s ease-out;
+    height: auto;
+    margin-bottom: 50px;
+}
+@keyframes fade-in {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
 
 /* skill 본문 */
-.skill{
+.skills{
     height: auto;
 }
 .skillWrap {
@@ -67,13 +93,49 @@
     margin-bottom: 50px;
     padding-bottom: 10px;
 }
+.skill{
+    /* border: 1px solid #fff; */
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+.skillSort{
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+.iconWrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 50px;
+}
+.icons{
+    display: flex;
+}
+.icon{
+    border-radius: 10px;
+    width: 50px;
+}
+.skillele{
+    display: flex;
+}
+
+.fa-code{
+    font-weight: 900;
+    margin-right: 10px;
+}
+.icon{
+    height: 50px;
+}
 
 /* project */
 .project{
     height: auto;
 }
 .projectWrap{
-    margin-bottom: 100px;
+    /* margin-bottom: 100px; */
     padding-bottom: 100px;
 }
 .projectWrap #projectTitle{
@@ -103,10 +165,13 @@
     cursor: pointer;
 }
 .hama{
-    background-image: url(/assets/img/hama.PNG);
+    background-image: url(/assets/img/prj_hama.PNG);
     background-size: cover;
     margin-bottom: 10px;
 }
-.hameWrap p:hover{
-    color: aquamarine;
+.hameWrap{
+    margin-right: 20px;
+}
+.hameWrap a{
+    text-decoration: none;
 }
