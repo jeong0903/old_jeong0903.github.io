@@ -1,33 +1,20 @@
-.header,
-.banner,
-.footer {
-    width: 100%;
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
 
 .headerMenu li {
-    text-align: center;
     font-size: 1.5rem;
+    text-align: center;
     list-style: none;
 }
 
 .headerMenu{
     position: relative;
-    z-index: 500;
+    top: -55px;
+    z-index: 10;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 140px;
     width: 800px;
 }
 
-.mainContainer{
-    overflow-y: scroll;
-}
 
 /* aboutMe 본문 */
 .aboutMe{
@@ -46,6 +33,7 @@
     margin-bottom: 50px;
     padding-bottom: 10px;
 }
+
 #Lv_1{
     color: aquamarine;
     font-weight: 900;
@@ -61,20 +49,6 @@
     height: 80px;
     padding: 0 20px 50px;
     margin: 20px;
-}
-.edu_rsm{
-    opacity: 1;
-    animation: fade-in 1s ease-out;
-    height: auto;
-    margin-bottom: 50px;
-}
-@keyframes fade-in {
-    from{
-        opacity: 0;
-    }
-    to{
-        opacity: 1;
-    }
 }
 
 /* skill 본문 */

@@ -20,6 +20,7 @@
             <div class="banner">
                 <p id="banner1"> "KEEP CALM AND CODE ON"</p>
             </div>
+                <!-- ========== END =========== -->
             <div class="header">
                 <ul class="headerMenu">
                     <li id="menu1"><a href="http://jeong0903.github.io/index.html">HOME</a></li>
@@ -30,23 +31,22 @@
                 </ul>
             </div>
         </div>
-        <!-- ========== END =========== -->
 
-        <div class="wrap">
+        <div class="contents">
             <!-- ============ ABOUT ME ============= -->
             <section class="aboutMe" id="aboutMe">
                 <div class="aboutMeWrap">
                     <p id="aboutMeTitle">ABOUT ME</p>
                     <h2>Introduction</h2>
-                    <div id="Introduction">
+                    <div id="Introduction" class="fade-in">
                         <p>안녕하세요. 매일 매일 <span id="Lv_1">Lv +1</span> 하는 개발자 박정현입니다.</p>
                         <p>개발하는 하루 하루가 즐거움으로 가득합니다.(๑・‿・๑)</p>
                         <p>감사합니다.🍀</p>
                     </div>
                     <br><br>
 
-                    <h2>Personal Keyword</h2>
                     <div id="Keyword">
+                    <h2>Personal Keyword</h2>
                         <p>#자기계발</p>
                         <p>#책임감</p>
                         <p>#커뮤니케이션 능력</p>
@@ -233,27 +233,28 @@
                 const menu3 = document.getElementById('menu3');
                 const menu4 = document.getElementById('menu4');
 
-                const $container = document.querySelector('.container');
+                // const $container = document.querySelector('.container');
 
                 menu2.addEventListener('click', function (event) {
                     event.preventDefault();
                     console.log('menu2 click');
-                    $container.scroll({ top: aboutMeTop, behavior: 'smooth' });
+                    window.scroll({ top: aboutMeTop, behavior: 'smooth' });
                 });
 
                 menu3.addEventListener('click', function (event) {
                     event.preventDefault();
                     console.log('menu3 click');
-                    $container.scroll({ top: skillsTop, behavior: 'smooth' });
+                    window.scroll({ top: skillsTop, behavior: 'smooth' });
                 });
 
                 menu4.addEventListener('click', function (event) {
                     event.preventDefault();
                     console.log('menu4 click');
-                    $container.scroll({ top: projectTop, behavior: 'smooth' });
+                    window.scroll({ top: projectTop, behavior: 'smooth' });
                 });
             });
     </script>
+
 </body>
 
 </html>

@@ -14,11 +14,15 @@
 
 <body>
     <div class="container">
-        <div class="banner">
-            <p id="banner1"> "KEEP CALM AND CODE ON"</p>
-            <div class="bannerWrap">
-            <span id="banner2">안녕하세요.</span>
-            <span id="banner3">매일 매일 Lv +1 하는 개발자 박정현입니다.🍀</span>
+        <!-- ============ COMMON ============= -->
+        <div class="common">
+            <div class="banner">
+                <p id="banner1"> "KEEP CALM AND CODE ON"</p>
+                <!-- ========== END =========== -->
+                <div class="bannerWrap">
+                    <span id="banner2">안녕하세요.</span>
+                    <span id="banner3">매일 매일 Lv +1 하는 개발자 박정현입니다.🍀</span>
+                </div>
             </div>
         </div>
 
@@ -36,42 +40,44 @@
             <div class="contactWrap">
                 <p id="contactTitle">CONTACT</p>
                 <p id="contact1">
-                    <span id="contactTitle_git">GIT</span><a href="http://jeong0903.github.io" id="gitBlog"><i class="fa-brands fa-square-github"></i>jeong0903.github.io</a>
+                    <span id="contactTitle_git">GIT</span><a href="http://jeong0903.github.io" id="gitBlog"><i
+                            class="fa-brands fa-square-github"></i>jeong0903.github.io</a>
                 </p>
                 <p id="contact2">
-                    <span id="contactTitle_email">EMAIL</span><a href="mailto:9193jane@gmail.com" id="emailAddress"><i class="fa-solid fa-at"></i>9193jane@gmail.com</a>
+                    <span id="contactTitle_email">EMAIL</span><a href="mailto:9193jane@gmail.com" id="emailAddress"><i
+                            class="fa-solid fa-at"></i>9193jane@gmail.com</a>
                 </p>
             </div>
         </div>
 
+        <div class="footer">
+            <p>ⓒ2023. <span id="footerName">JEONG HYEON PARK</span>. All Rights Reserved.</p>
+        </div>
     </div>
-    <div class="footer">
-        <p>ⓒ2023. <span id="footerName">JEONG HYEON PARK</span>. All Rights Reserved.</p>
-    </div>
-<script>
-    // contact 무빙 효과
-    document.addEventListener("DOMContentLoaded", function () {
-        const headerMenu = document.querySelector('.headerMenu');
-         const contactSection = document.querySelector('.contact');
+    <script>
+        // contact 무빙 효과
+        document.addEventListener("DOMContentLoaded", function () {
+            const headerMenu = document.querySelector('.headerMenu');
+            const contactSection = document.querySelector('.contact');
 
-        document.getElementById('menu5').addEventListener('click', function (event) {
-            event.preventDefault();
-            headerMenu.classList.add('moveOut');
-            setTimeout(function () {
-                contactSection.classList.add('show');
-            }, 50);
-            contactSection.style.display = 'flex';
-        });
+            document.getElementById('menu5').addEventListener('click', function (event) {
+                event.preventDefault();
+                headerMenu.classList.add('moveOut');
+                setTimeout(function () {
+                    contactSection.classList.add('show');
+                }, 50);
+                contactSection.style.display = 'flex';
+            });
 
-        const menuItems = document.querySelectorAll('.headerMenu li:not(#menu5)');
-        menuItems.forEach(function (item) {
-            item.addEventListener('click', function () {
-                headerMenu.classList.remove('moveOut');
-                contactSection.classList.remove('show');
+            const menuItems = document.querySelectorAll('.headerMenu li:not(#menu5)');
+            menuItems.forEach(function (item) {
+                item.addEventListener('click', function () {
+                    headerMenu.classList.remove('moveOut');
+                    contactSection.classList.remove('show');
+                });
             });
         });
-    });
-</script>
+    </script>
 </body>
 
 </html>
