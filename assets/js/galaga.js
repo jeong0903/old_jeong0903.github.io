@@ -16,7 +16,7 @@ let jetY = canvas.height-70;
 
 function loadImage(){
   bgImg = new Image();
-  bgImg.src = "/assets/img/game_BG.jpg";
+  bgImg.src = "/assets/img/game_BG.png";
 
   jetImg = new Image();
   jetImg.src = "/assets/img/game_jet.png"
@@ -44,6 +44,7 @@ function setupKeyboardListener(){
   })
 }
 
+// 2. 우주선의 X, Y 좌표가 바뀌고,
 function update(){
   if( 'ArrowRight' in keysDown) {
     jetX += 3;
@@ -73,5 +74,4 @@ loadImage();
 setupKeyboardListener();
 main();
 
-// 2. 우주선의 X, Y 좌표가 바뀌고,
 // 3. 다시 RENDER 그려준다.
