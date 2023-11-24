@@ -31,15 +31,47 @@ function loadImage(){
   ggImg.src = "/assets/img/game_gameover.png"
 }
 
+let keysDown={}
+
+// 1. 방향키를 누르면,
+function setupKeyboardListener(){
+  document.addEventListener("keydown", function(event){
+    console.log("keyboard", event.key);
+    keysDown[event.key] = true;
+  });
+  document.addEventListener("keyup", function(event){
+    delete keysDown[event.key];
+  })
+}
+
+function update(){
+  if( 'ArrowRight' in keysDown) {
+    jetX += 3;
+  } else if('ArrowLeft' in keysDown) {
+    jetX -= 3;
+  };
+  // 우주선 좌표값 제한
+  if(jetX <= 0){
+    jetX = 0;
+  } else if (jetX >= canvas.width - 64){
+    jetX = canvas.width - 64;
+  };
+}
+
 function render(){
   ctx.drawImage(bgImg, 0, 0, canvas.width, canvas.height);
   ctx.drawImage(jetImg, jetX, jetY);
 }
 
 function main(){
-  render()
-  requestAnimationFrame(main)
+  update();
+  render();
+  requestAnimationFrame(main);
 }
 
 loadImage();
+setupKeyboardListener();
 main();
+
+// 2. 우주선의 X, Y 좌표가 바뀌고,
+// 3. 다시 RENDER 그려준다.

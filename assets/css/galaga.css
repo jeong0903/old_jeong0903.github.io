@@ -14,8 +14,11 @@
   width: 800px;
 }
 
-/* GALAGA MAIN */
+html{
+  overflow-x: hidden;
+}
 
+/* GALAGA MAIN */
 .galagaContainer{
   height: 100vh;
   display: flex;
