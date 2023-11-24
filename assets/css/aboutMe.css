@@ -50,10 +50,27 @@
 #edu_rsm01, #edu_rsm02, #edu_rsm03, #edu_rsm04{
     display: flex;
     flex-direction: column;
-    border-left: 2px solid #fff;
+    border-left: 5px solid #fff;
     height: 80px;
     padding: 0 20px 50px;
     margin: 20px;
+}
+
+[data-scroll] {
+    opacity: 0;
+    will-change: transform, opacity;
+    transform: translateY(1rem);
+    transition: all 5s;
+}
+
+[data-scroll="in"] {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+[data-scroll="out"] {
+    opacity: 0;
+    transform: translateX(30%);
 }
 
 /* skill 본문 */
@@ -149,6 +166,7 @@
     background-size: cover;
     margin-bottom: 10px;
 }
+
 .toyWrap{
     margin-bottom: 10px;
 }

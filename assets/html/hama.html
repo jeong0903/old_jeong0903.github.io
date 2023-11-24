@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/assets/css/hama.css">
     <link rel="stylesheet" href="/assets/css/common.css">
     <script src="https://kit.fontawesome.com/ba16334cfd.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
 </head>
 
 <body>
@@ -29,10 +30,10 @@
         <div class="hamaMain">
             <div class="hamaTitle"><i class="fa-solid fa-hippo" style="color: #ffffff;"></i><span>Team HAMA</span>
                 <div class="hamaMenu">
-                    <button class="links"><a href="/assets/2팀 프로젝트 발표 PPT.pdf">#프로젝트PDF</a></button>
-                    <button class="links"><a href="https://github.com/myeng-dong/10_26this.git">#소스 코드</a></button>
-                    <button class="links"><a href="https://youtu.be/PI9B-GjoWWw">#시연 영상</a></button>
-                    <button class="links"><a href="https://jeong0903.github.io/aboutMe.html#project">#돌아가기</a></button>
+                    <button class="links"><a href="/assets/2팀 프로젝트 발표 PPT.pdf"><span class="ln_txt"> #프로젝트PDF</span></a></button>
+                    <button class="links"><a href="https://github.com/myeng-dong/10_26this.git"><span class="ln_txt"> #소스 코드</span></a></button>
+                    <button class="links"><a href="https://youtu.be/PI9B-GjoWWw"><span class="ln_txt"> #시연 영상</span></a></button>
+                    <button class="links"><a href="https://jeong0903.github.io/aboutMe.html#project"><span class="ln_txt"> #돌아가기</span></a></button>
                 </div>
             </div>
 
@@ -58,12 +59,28 @@
                         <img class="hama_img" id="hama_img9" src="/assets/img/prj_end.PNG" alt="">
                     </div>
                 </div>
+                <div class="hamaWeb">
+                    <p id="hamaWeb1" data-scroll>
+                        <a href="/assets/img/img_hama.PNG"><img src="/assets/img/img_hama.PNG" alt="메인화면" class="hamaWeb_img" id="hamaWeb_img1"></a>
+                        <a href="/assets/img/img_esti_1.PNG"><img src="/assets/img/img_esti_1.PNG" alt="견적요청 1" class="hamaWeb_img" id="hamaWeb_img2"></a>
+                        <a href="/assets/img/img_esti_detail.PNG"><img src="/assets/img/img_esti_detail.PNG" alt="견적 요청2" class="hamaWeb_img" id="hamaWeb_img3"></a>
+                    </p><p id="hamaWeb2" data-scroll>
+                        <a href="/assets/img/img_reqBoard.PNG"><img src="/assets/img/img_reqBoard.PNG" alt="요청게시판" class="hamaWeb_img" id="hamaWeb_img4"></a>
+                        <a href="/assets/img/img_esti_write.PNG"><img src="/assets/img/img_esti_write.PNG" alt="견적서 작성" class="hamaWeb_img" id="hamaWeb_img5"></a>
+                        <a href="/assets/img/img_esti_coment.PNG"><img src="/assets/img/img_esti_coment.PNG" alt="견적서 상세보기" class="hamaWeb_img" id="hamaWeb_img6"></a>
+                    </p><p id="hamaWeb2" data-scroll>
+                        <a href="/assets/img/img_box.PNG"><img src="/assets/img/img_box.PNG" alt="견적함" class="hamaWeb_img" id="hamaWeb_img7"></a>
+                        <a href="/assets/img/img_community.PNG"><img src="/assets/img/img_community.PNG" alt="커뮤니티 게시판" class="hamaWeb_img" id="hamaWeb_img8"></a>
+                        <a href="/assets/img/img_customer.PNG"><img src="/assets/img/img_customer.PNG" alt="고객센터" class="hamaWeb_img" id="hamaWeb_img9"></a>
+                    </p>
+                </div>
             </div>
         </div>
         <div class="footer">
             <p>ⓒ2023. <span id="footerName">JEONG HYEON PARK</span>. All Rights Reserved.</p>
         </div>
     </div>
+    <script>ScrollOut({});</script>
     <script>
         document.addEventListener('DOMContentLoaded', function(){
             const hamaAim = document.getElementById('hama_button1');

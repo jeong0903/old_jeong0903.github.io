@@ -10,7 +10,7 @@
     <!-- 공통 -->
     <link rel="stylesheet" href="/assets/css/common.css">
     <script src="https://kit.fontawesome.com/ba16334cfd.js" crossorigin="anonymous"></script> 
-
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
 </head>
 
 <body>
@@ -58,25 +58,25 @@
 
                     <div class="edu_rsm">
                         <h2>EDUCATION & RESUME</h2>
-                        <div id="edu_rsm01">
+                        <div id="edu_rsm01" data-scroll>
                             <span>
                                 <p>2010. 03. - 2014. 02.</p>
                                 <p>전북 완주군 우석대학교 아동복지학과 학사 졸업 (평점평균 4.2/4.5)</p>
                             </span>
                         </div>
-                        <div id="edu_rsm02">
+                        <div id="edu_rsm02" data-scroll>
                             <span>
                                 <p>2016. 03. - 2022. 02.</p>
                                 <p>부산 사하구 동아대학교 일반대학원 영유아학과 석박사 통합과정 수료 (평균평점 4.28)</p>
                             </span>
                         </div>
-                        <div id="edu_rsm03">
+                        <div id="edu_rsm03" data-scroll>
                             <span>
                                 <p>2014. 03 - 2023. 02.</p>
                                 <p>어린이집(담임교사) 및 유치원(행정직) 근무</p>
                             </span>
                         </div>
-                        <div id="edu_rsm04">
+                        <div id="edu_rsm04" data-scroll>
                             <span>
                                 <p>2023. 06. - 2023. 11.</p>
                                 <p>울산 KH 인재교육원 JAVA과정 수료(개근상)</p>
@@ -220,7 +220,7 @@
             </div>
         </div>
     </div>
-
+    <script>ScrollOut({});</script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
                 const sections = document.querySelectorAll("section");
