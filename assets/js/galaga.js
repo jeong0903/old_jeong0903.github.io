@@ -16,6 +16,10 @@ let jetY = canvas.height-70;
 
 function loadImage(){
   bgImg = new Image();
+  bgImg.onload = function(){
+    console.log("Background image loaded!");
+    // 다른 이미지들도 유사하게 처리
+  };
   bgImg.src = "/assets/img/game_BG.png";
 
   jetImg = new Image();
