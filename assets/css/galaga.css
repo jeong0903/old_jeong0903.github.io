@@ -1,0 +1,28 @@
+.headerMenu li {
+  font-size: 1.5rem;
+  text-align: center;
+  list-style: none;
+}
+
+.headerMenu{
+  position: relative;
+  top: -55px;
+  z-index: 10;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 800px;
+}
+
+/* GALAGA MAIN */
+
+.galagaContainer{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+.galagaMain{
+  margin: 250px 0 100px;
+  position: relative;
+  top: -30px;
+}

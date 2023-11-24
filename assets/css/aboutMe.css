@@ -170,6 +170,10 @@
 .toyWrap{
     margin-bottom: 10px;
 }
+.toy{
+    background-image: url(/assets/img/game_IMG.jpg);
+    background-size: 100% 100%;
+}
 .appWrap{
     margin-bottom: 10px;
 }
