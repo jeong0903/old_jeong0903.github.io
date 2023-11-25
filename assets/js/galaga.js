@@ -1,3 +1,4 @@
+document.addEventListener('DOMContentLoaded', function() {
 // canvas 세팅
 let canvas;
 let ctx;
@@ -190,3 +191,4 @@ loadImage();
 setupKeyboardListener();
 createEnemy();
 main();
+});
