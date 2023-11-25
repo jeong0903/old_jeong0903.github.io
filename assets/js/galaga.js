@@ -42,8 +42,13 @@ function Bullet(){
         score += 10;
         this.alive = false;   // 죽은 총알
         enemyList.splice(i, 1);
+
+        return;
       }
     }
+    if (this.y < 0) {
+    this.alive = false;
+  }
   }
 }
 
