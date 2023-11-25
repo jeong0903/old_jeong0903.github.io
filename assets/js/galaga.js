@@ -110,7 +110,7 @@ function setupKeyboardListener(){
     delete keysDown[event.key];
 
     // 총알 1. 스페이스바 -> 총알 발사
-    if(event.key == 'keyboard' in keysDown){
+    if(event.key == ' ' in keysDown){
       createBullet();  // 총알 생성
     }
   })
@@ -194,11 +194,3 @@ loadImage();
 setupKeyboardListener();
 createEnemy();
 main();
-
-
-
-// 적군 1. 위치가 랜덤
-// 적군 2. 밑으로 내려감
-// 적군 3. 주기적으로 나타남
-// 적군 4. 바닥에 닿으면 게임 끝
-// 적군 5. 총알이 닿으면 bomb, score += 1
