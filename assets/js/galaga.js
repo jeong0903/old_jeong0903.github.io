@@ -79,23 +79,27 @@ function Enemy(){
 
 function loadImage(){
   bgImg = new Image();
+  bgImg.src = "/assets/img/game_BG.png";
   bgImg.onload = function(){
     console.log("Background image loaded!");
     // 다른 이미지들도 유사하게 처리
   };
-  bgImg.src = "/assets/img/game_BG.png";
 
   jetImg = new Image();
   jetImg.src = "/assets/img/game_jet.png"
-
+  jetImg.onload();
+  
   bulletImg = new Image();
   bulletImg.src = "/assets/img/game_bullet.png"
-
+  bulletImg.onload();
+  
   enemyImg = new Image();
   enemyImg.src = "/assets/img/game_virus.png"
-
+  enemyImg.onload();
+  
   ggImg = new Image();
   ggImg.src = "/assets/img/game_gameover.png"
+  ggImg.onload();
 }
 
 let keysDown={}
