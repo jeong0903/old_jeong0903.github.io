@@ -60,7 +60,7 @@
 
 .button{
     width: 100px;
-    height: auto;
+    height: 100px;
     cursor: pointer;
     margin: 50px;
     display: flex;
@@ -71,16 +71,12 @@
     font-size: 2rem;
 }
 
-#construction{
+
+.btn_back img, .btn_galaga img{
     width: 100px;
-    height: auto;
+    height: 100px;
 }
-#UC{
-    font-size: 1rem;
-}
-#btn_back img, #btn_galaga img{
-    width: 100px;
-    height: auto;
+/* .btn_back, .btn_galaga{
     animation: moving 3s infinite;
 }
 @keyframes moving {
@@ -95,4 +91,13 @@
     100% {
         transform: translateY(0);
     }
-    }
+    } */
+
+#construction {
+    width: 100px;
+    height: auto;
+}
+
+#UC {
+    font-size: 1rem;
+}
