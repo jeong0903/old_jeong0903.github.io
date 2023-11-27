@@ -1,9 +1,4 @@
 /* 프로젝트 배너 */
-.ToyContainer {
-    /* position: absolute; */
-    width: 100vw;
-    height: 100vh;
-}
 
 .ToyContainer::before {
     content: "";
