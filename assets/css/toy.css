@@ -75,7 +75,8 @@
     width: 100px;
     height: 100px;
 }
-.btn_back, .btn_galaga{
+.button.btn_back, 
+.button.btn_galaga{
     animation: moving 3s infinite;
 }
 @keyframes moving {
