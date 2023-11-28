@@ -56,14 +56,13 @@ flex-direction: column;
 justify-content: center;
 position: relative;
 padding-bottom: 100px;
+padding-top: 200px;
 }
 
 /* CONTACT */
 .contact {
     position: absolute;
-    top: 10%;
-    opacity: 0;
-    display: none;
+    top: 30%;
     flex-direction: column;
     align-items: baseline;
     width: 800px;
