@@ -80,7 +80,7 @@ function Enemy(){
 
 function loadImage(){
   bgImg = new Image();
-  bgImg.src = "/assets/img/game_BG.png";
+  bgImg.src = "/assets/img/game_bg.png";
 
   jetImg = new Image();
   jetImg.src = "/assets/img/game_jet.png"
