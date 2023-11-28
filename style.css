@@ -27,6 +27,7 @@
     flex-direction: column;
     justify-content: center;
     transition: transform 0.5s ease-in-out;
+    padding-right: 200px;
 }
 
 .headerMenu a{
@@ -49,19 +50,18 @@
     }
 }
 .header {
-margin-top: 200px;
 height: calc(100vh - 300px);
 display: flex;
 flex-direction: column;
 justify-content: center;
 position: relative;
-padding-right: 10%;
+padding-bottom: 100px;
 }
 
 /* CONTACT */
 .contact {
     position: absolute;
-    top: 30%;
+    top: 10%;
     opacity: 0;
     display: none;
     flex-direction: column;
