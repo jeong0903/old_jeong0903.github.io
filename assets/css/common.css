@@ -13,9 +13,10 @@
 }
 
 .container {
-    /* position: absolute; */
+    position: absolute;
+    top:200px;
     width: 100vw;
-    height: 100vh;
+    height: calc(100vh-300px);
 }
 
 .container::before {
@@ -136,6 +137,7 @@
 }
 /* ------------ footer ------------------------------------------------- */
 .footer {
+    position: absolute;
     bottom: 0;
     left: 0;
     height: 100px;
