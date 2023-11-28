@@ -127,12 +127,9 @@
 }
 
 /* project */
-.project{
-    height: auto;
-}
+
 .projectWrap{
-    /* margin-bottom: 100px; */
-    padding-bottom: 100px;
+    padding-bottom: 300px;
 }
 .projectWrap #projectTitle{
     font-weight: 900;
