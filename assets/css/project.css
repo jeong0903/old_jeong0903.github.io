@@ -1,0 +1,57 @@
+.header,
+.banner,
+.footer {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.headerMenu li {
+    text-align: center;
+    font-size: 1.5rem;
+    list-style: none;
+}
+
+.headerMenu{
+    position: relative;
+    z-index: 500;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 140px;
+    width: 800px;
+}
+
+/* project 본문 */
+
+.headerMenu li{
+    text-align: center;
+    font-size: 1.5rem;
+    list-style: none;
+}
+.headerMenu a{
+    text-decoration: none;
+}
+
+.headerMenu a:hover{
+    font-weight: 900;
+    color: #fff;
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+        animation: neon 3.0s infinite alternate;
+}
+@keyframes neon {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+    }
+
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 50px #ff00de, 0 0 80px #ff00de, 0 0 90px #ff00de, 0 0 110px #ff00de, 0 0 170px #ff00de;
+    }
+}
+
+.aboutMe{
+    background-color: gold;
+}

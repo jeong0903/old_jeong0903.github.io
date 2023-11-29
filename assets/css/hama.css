@@ -1,0 +1,165 @@
+/* 프로젝트 배너 */
+
+.banner2{
+    position: relative;
+    top: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+.banner2 .hamaName{
+    font-weight: bolder;
+    margin-right: 50px;
+    font-size: 25px;
+    color: rgba(255, 255, 255, 0.9);
+}
+.hamaInfo{
+    margin-right: 50px;
+    color: rgba(255, 255, 255, 0.9);
+}
+#hamaInfo1, #hamaInfo2, #hamaInfo3, #hamaInfo4{
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #003;
+    margin-right: 5px;
+    padding: 0 5px;
+}
+
+/* 프로젝트 타이틀 */
+.hamaMain{
+    margin-top: 200px;
+    padding: 30px 100px;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+.hama1{
+    padding-left: 50px;
+}
+
+.hamaTitle i {
+    font-size: 2rem;
+    position: relative;
+    top: -10px;
+    margin-right: 10px;
+}
+
+.hamaTitle{
+    display: flex;
+    align-items: end;
+    font-size: 3rem;
+    font-weight: 900;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+button{
+    background-color: #003;
+    width: 100px;
+    height: 30px;
+    margin: 10px 20px;
+    cursor: pointer;
+}
+
+.links a{
+    text-decoration: none;
+}
+
+/* links 버튼 효과 */
+.ln_txt{
+    position: relative;
+    z-index: 100;
+    transition: all 0.4s;
+    width: 100%;
+    height: 100%;
+}
+.links:hover .ln_txt{
+    color: #003;
+}
+.links{
+    position: relative;
+    overflow: hidden;
+    color: #003;
+}
+.links::before{
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    color: #003;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: -100%;
+    transition: all 0.4s;
+}
+.links:hover::before{
+    transform: translateX(100%);
+}
+/* 프로젝트 본문 */
+.hamaProject{
+    display: flex;
+    margin: 50px 0;
+    padding: 50px 100px;
+    border: 1px solid #fff;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+.hamaProject img{
+    width: 600px;
+    height: 350px;
+    margin-right: 100px;
+    border-radius: 10px;
+}
+.hama_buttons{
+    display: flex;
+    flex-direction: column;
+}
+
+.hama_button:hover {
+    background-color: #fff;
+}
+
+.hama_button:hover {
+    color: #003;
+}
+
+.hama_slides{
+    display: flex;
+    overflow-x: scroll;
+    padding-bottom: 30px;
+}
+
+/* 웹사이트 이미지들 */
+#hamaWeb1, #hamaWeb2, #hamaWeb3{
+    display: flex;
+    justify-content: space-between;
+}
+.hamaWeb_img{
+    margin: 20px 0;
+    width: 450px;
+    height: 300px;
+    border-radius: 10px;
+    filter: all 2s ease-in-out;
+    opacity: 1;
+}
+.hamaWeb_img:hover{
+    opacity: 0.8;
+}
+
+[data-scroll] {
+    opacity: 0;
+    will-change: transform, scale, opacity;
+    transform: translateY(6rem);
+    transition: all 1.5s;
+}
+
+[data-scroll="in"] {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+[data-scroll="out"] {
+    opacity: 0;
+    transform: translateY(0);
+}
+

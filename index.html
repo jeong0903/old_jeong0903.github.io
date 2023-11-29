@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JEONG HYEON PARK</title>
+    <!-- <link rel="stylesheet" href="jeong0903.github.io/style.css">  -->
+    <link rel="stylesheet" href="/style.css">
+    <!-- 공통 -->
+    <link rel="stylesheet" href="/assets/css/common.css">
+    <script src="https://kit.fontawesome.com/ba16334cfd.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <!-- ============ COMMON ============= -->
+        <div class="common">
+            <div class="banner">
+                <p id="banner1">"KEEP CALM AND CODE ON"</p>
+                <!-- ========== END =========== -->
+                <div class="bannerWrap">
+                    <span id="banner2">안녕하세요.</span>
+                    <span id="banner3">매일 매일 Lv +1 하는 개발자 박정현입니다.🍀</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="header">
+            <ul class="headerMenu">
+                <li id="menu1"><a href="#">HOME</a></li>
+                <li id="menu2"><a href="https://jeong0903.github.io/aboutMe.html#aboutMe">ABOUT ME</a></li>
+                <li id="menu3"><a href="https://jeong0903.github.io/aboutMe.html#skill">SKILL</a></li>
+                <li id="menu4"><a href="https://jeong0903.github.io/aboutMe.html#project">PROJECT</a></li>
+                <li id="menu5"><a href="#">CONTACT</a></li>
+            </ul>
+        </div>
+
+        <div class="contact" style="display: none;">
+            <div class="contactWrap">
+                <p id="contactTitle">CONTACT</p>
+                <p id="contact1">
+                    <span id="contactTitle_git">GIT</span><a href="http://jeong0903.github.io" id="gitBlog"><i
+                            class="fa-brands fa-square-github"></i>jeong0903.github.io</a>
+                </p>
+                <p id="contact2">
+                    <span id="contactTitle_email">EMAIL</span><a href="mailto:9193jane@gmail.com" id="emailAddress"><i
+                            class="fa-solid fa-at"></i>9193jane@gmail.com</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>ⓒ2023. <span id="footerName">JEONG HYEON PARK</span>. All Rights Reserved.</p>
+        </div>
+    </div>
+    <script>
+        // contact 무빙 효과
+        document.addEventListener("DOMContentLoaded", function () {
+                const headerMenu = document.querySelector('.headerMenu');
+                const contactSection = document.querySelector('.contact');
+
+                // CONTACT 메뉴 클릭 시
+                document.getElementById('menu5').addEventListener('click', function (event) {
+                    event.preventDefault();
+                    headerMenu.classList.add('moveOut');
+                    setTimeout(function () {
+                        contactSection.classList.add('show');
+                    }, 50);
+                    contactSection.style.display = 'flex';
+                });
+
+                // 다른 메뉴 클릭 시
+                const menuItems = document.querySelectorAll('.headerMenu li:not(#menu5)');
+                menuItems.forEach(function (item) {
+                    item.addEventListener('click', function () {
+                        if (contactSection.classList.contains('show')) {
+                            headerMenu.classList.remove('moveOut');
+                            contactSection.classList.remove('show');
+                            setTimeout(function () {
+                                contactSection.style.display = 'none';
+                            }, 500); // 0.5초 후 CONTACT 창을 숨깁니다. 애니메이션이 완료되면 숨김 처리합니다.
+                        }
+                    });
+                });
+            });
+
+    </script>
+</body>
+
+</html>

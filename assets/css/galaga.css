@@ -1,0 +1,45 @@
+.ToyContainer{
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-image: url("/assets/img/toy_bgimg.jpg");
+  background-size: cover;
+  /* filter: brightness(0.6); */
+  /* 배경 이미지의 밝기 조절 (선택사항) */
+}
+
+.headerMenu li {
+  font-size: 1.5rem;
+  text-align: center;
+  list-style: none;
+}
+
+.headerMenu{
+  position: relative;
+  top: -55px;
+  z-index: 10;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 800px;
+}
+
+html{
+  overflow-x: hidden;
+}
+
+/* GALAGA MAIN */
+.galagaContainer{
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+}
+.galagaMain{
+  margin-top: 200px;
+  position: relative;
+  top: 10px;
+}

@@ -1,0 +1,55 @@
+.header,
+.banner,
+.footer {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.headerMenu li {
+    text-align: center;
+    font-size: 1.5rem;
+    list-style: none;
+}
+
+.headerMenu {
+    position: relative;
+    z-index: 500;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 140px;
+    width: 800px;
+}
+
+/* skill 본문 */
+
+.skillWrap {
+    width: 90%;
+    height: 555px;
+    overflow-y: scroll;
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    position: relative;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 30px;
+}
+
+.skillWrap #skillTitle {
+    font-weight: 900;
+    font-size: 2.5rem;
+    letter-spacing: 10px;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 50px;
+    padding-bottom: 10px;
+}
+
+.skill{
+    margin-bottom: 20px;
+}

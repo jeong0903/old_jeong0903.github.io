@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: 'S-CoreDream-3Light', sans-serif;
+}
+
+@font-face {
+    font-family: 'S-CoreDream-3Light';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.container {
+    position: absolute;
+    /* top:200px; */
+    width: 100vw;
+    height: calc(100vh-300px);
+}
+
+.container::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    background-image: url("/assets/img/bgimg_coding.jpg");
+    background-size: cover;
+    filter: brightness(0.6);
+    /* 배경 이미지의 밝기 조절 (선택사항) */
+}
+/* ------------ common(header&banner) --------------------------------- */
+.common {
+    height: 200px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#banner1 a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.banner {
+    top: 0;
+    height: 200px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.banner #banner1 {
+    position: absolute;
+    top: 50px;
+    /* padding-top: 30px; */
+    font-size: 36px;
+    font-weight: bold;
+    background: linear-gradient(to right, #fff, #fff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: textFill 2s infinite alternate;
+}
+
+@keyframes textFill {
+    0% {
+        background-clip: text;
+        color: #333;
+    }
+
+    100% {
+        background-clip: text;
+        color: #fff;
+    }
+}
+
+.banner,
+.footer {
+    width: 100%;
+    /* position: static; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.headerMenu a {
+    text-decoration: none;
+}
+
+.headerMenu a:hover {
+    font-weight: 900;
+    color: #fff;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+    animation: neon 3.0s infinite alternate;
+}
+
+@keyframes neon {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+    }
+
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 50px #ff00de, 0 0 80px #ff00de, 0 0 90px #ff00de, 0 0 110px #ff00de, 0 0 170px #ff00de;
+    }
+}
+
+/* ------------ section ------------------------------------------------- */
+.aboutMe,
+.skills,
+.project,
+.hamaMain {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.aboutMeWrap,
+.skillWrap,
+.projectWrap {
+    padding: 100px;
+}
+
+#aboutMeTitle, #skillTitle, #projectTitle{
+    width: 1000px;
+}
+/* ------------ footer ------------------------------------------------- */
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+#footerName{
+    font-weight: 900;
+    color: aquamarine;
+}

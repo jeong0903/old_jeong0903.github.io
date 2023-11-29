@@ -1,0 +1,197 @@
+
+.headerMenu li {
+    font-size: 1.5rem;
+    text-align: center;
+    list-style: none;
+}
+
+.headerMenu{
+    position: relative;
+    top: -55px;
+    z-index: 10;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 800px;
+}
+
+
+/* aboutMe 본문 */
+.aboutMe{
+    padding-top: 200px;
+}
+.aboutMeWrap{
+    position: relative;
+    line-height: 30px;
+    padding-top: 200px;
+}
+.aboutMeWrap #aboutMeTitle{
+    font-weight: 900;
+    font-size: 2.5rem;
+    letter-spacing: 10px;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 50px;
+    padding-bottom: 10px;
+}
+.Introduction{
+    width: 800px;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px 30px;
+    border-radius: 10px;
+}
+#Lv_1{
+    color: aquamarine;
+    font-weight: 900;
+}
+.aboutMe h2{
+    margin-bottom: 10px;
+}
+/* *{outline: 1px solid gray;} */
+#edu_rsm01, #edu_rsm02, #edu_rsm03, #edu_rsm04{
+    display: flex;
+    flex-direction: column;
+    border-left: 5px solid #fff;
+    height: 80px;
+    padding: 0 20px 50px;
+    margin: 20px;
+}
+
+[data-scroll] {
+    opacity: 0;
+    will-change: transform, opacity;
+    transform: translateY(1rem);
+    transition: all 5s;
+}
+
+[data-scroll="in"] {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+[data-scroll="out"] {
+    opacity: 0;
+    transform: translateX(30%);
+}
+
+/* skill 본문 */
+.skills{
+    height: auto;
+}
+.skillWrap {
+    line-height: 30px;
+}
+
+.skillWrap #skillTitle {
+    font-weight: 900;
+    font-size: 2.5rem;
+    letter-spacing: 10px;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 50px;
+    padding-bottom: 10px;
+}
+.skill{
+    /* border: 1px solid #fff; */
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+.skillSort{
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+.iconWrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 50px;
+}
+.icons{
+    display: flex;
+}
+.icon{
+    border-radius: 10px;
+    width: 50px;
+}
+.skillele{
+    display: flex;
+}
+
+.fa-code{
+    font-weight: 900;
+    margin-right: 10px;
+}
+.icon{
+    height: 50px;
+}
+
+/* project */
+
+.projectWrap{
+    padding-bottom: 300px;
+    margin-bottom: 100px;
+}
+.projectWrap #projectTitle{
+    font-weight: 900;
+    font-size: 2.5rem;
+    letter-spacing: 10px;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 50px;
+    padding-bottom: 10px;
+}
+.projectWrap .projectList{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.projectWrap .projectList .hama, .toy, .app, .screen{
+    border: 1px solid #fff;
+    width: 400px;
+    height: 300px;
+    border-radius: 10px;
+}
+.hameWrap, .toyWrap, .appWrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+}
+.hama{
+    background-image: url(/assets/img/img_hama.PNG);
+    background-size: cover;
+    margin-bottom: 10px;
+}
+
+.toyWrap{
+    margin-bottom: 10px;
+}
+.toy{
+    background-image: url(/assets/img/game_IMG.jpg);
+    background-size: 100% 100%;
+}
+.appWrap{
+    margin-bottom: 10px;
+}
+.projectList a{
+    text-decoration: none;
+}
+.screen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 2;
+    top:1px;
+    left: 1px;
+    overflow: hidden;
+    transition: .2s ease-in;
+    opacity: 1;
+}
+.screen:hover{
+    /* transition: 2s ease-in; */
+    opacity: 0;
+}
