@@ -65,7 +65,9 @@
     text-align: center;
     font-size: 2rem;
 }
-
+#CD_CR_SG{
+    font-size: 1.5rem;
+}
 .btn_back img, .btn_galaga img, .btn_candy img{
     width: 100px;
     height: 100px;
