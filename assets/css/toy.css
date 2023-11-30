@@ -66,7 +66,7 @@
     font-size: 2rem;
 }
 
-.btn_back img, .btn_galaga img .btn_candy img{
+.btn_back img, .btn_galaga img, .btn_candy img{
     width: 100px;
     height: 100px;
 }
