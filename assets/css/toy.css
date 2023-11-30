@@ -66,12 +66,13 @@
     font-size: 2rem;
 }
 
-.btn_back img, .btn_galaga img{
+.btn_back img, .btn_galaga img .btn_candy img{
     width: 100px;
     height: 100px;
 }
 .button.btn_back, 
-.button.btn_galaga{
+.button.btn_galaga,
+.button.btn_candy{
     animation: moving 3s infinite;
 }
 @keyframes moving {
