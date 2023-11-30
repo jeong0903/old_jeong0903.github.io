@@ -71,7 +71,6 @@ html{
 }
 
 .galagaPdfWrap{
-  display: none;/
   margin-left: 50px;
   height: 600px;
   width: 400px;
@@ -80,6 +79,41 @@ html{
   overflow: hidden;
 }
 .galagaPdf{
+  display: none;
   width: 400px;
   height: 600px;
+}
+
+/* 모달 스타일 */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: calc(50% + 200px);
+  top: 190px;
+  width: 400px;
+  height: 600px;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+  margin: 10% auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+.close {
+  color: #fff;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.modal-img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
