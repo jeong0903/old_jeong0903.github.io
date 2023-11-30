@@ -34,9 +34,16 @@
         <div class="galagaMain">
         </div>
         <div class="btnWrap">
-          <a href="https://github.com/jeong0903/jeong0903.github.io/blob/main/assets/js/galaga.js"><button class="btn src">소스코드</button></a>
-          <button class="btn pdf">화면설계</button>
+          <a
+            href="https://github.com/jeong0903/jeong0903.github.io/blob/main/assets/js/galaga.js"><button
+              class="btn src">소스코드</button></a>
+          <button class="btn pdf">프로젝트 개요</button>
           <button class="btn comment">후기</button>
+        </div>
+        <div class="galagaPdfWrap">
+          <img class="galagaPdf pdf1" src="/assets/pdf/galagaPdf1.jpg" alt>
+          <img class="galagaPdf pdf2" src="/assets/pdf/galagaPdf2.jpg" alt>
+          <img class="galagaPdf pdf3" src="/assets/pdf/galagaPdf3.jpg" alt>
         </div>
       </div>
       <div class="footer">
@@ -45,5 +52,45 @@
         <div>icon by icons8</div>
       </div>
     </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        const pdfButton = document.querySelector('.btn.pdf');
+        const images = document.querySelectorAll('.galagaPdf.pdf2');
+        let currentImageIndex = 0;
+
+        pdfButton.addEventListener('click', function() {
+          console.log('pdf click!');
+          // 이미지 슬라이더를 보여주는 함수
+          function showSlide(index) {
+            images.forEach(img => {
+              img.style.display = 'none';
+            });
+
+            images[index].style.display = 'block';
+          }
+
+          // 다음 이미지로 이동하는 함수
+          function nextSlide() {
+            currentImageIndex = (currentImageIndex + 1) % images.length;
+            showSlide(currentImageIndex);
+          }
+
+          // 이전 이미지로 이동하는 함수
+          function prevSlide() {
+            currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+            showSlide(currentImageIndex);
+          }
+
+          // 슬라이드쇼 시작
+          showSlide(currentImageIndex);
+
+          // 다음 이미지 보기
+          pdfButton.addEventListener('click', nextSlide);
+
+          // 이전 이미지 보기
+          pdfButton.addEventListener('contextmenu', prevSlide);
+        });
+      });
+    </script>
   </body>
 </html>

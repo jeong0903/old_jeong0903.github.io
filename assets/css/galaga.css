@@ -69,3 +69,17 @@ html{
   color: #fff;
   border: 2px solid #fff;
 }
+
+.galagaPdfWrap{
+  display: none;/
+  margin-left: 50px;
+  height: 600px;
+  width: 400px;
+  position: relative;
+  top: 10px;
+  overflow: hidden;
+}
+.galagaPdf{
+  width: 400px;
+  height: 600px;
+}
