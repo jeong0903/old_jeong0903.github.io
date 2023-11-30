@@ -34,12 +34,38 @@ html{
 
 /* GALAGA MAIN */
 .galagaContainer{
-  height: 90vh;
+  height: auto;
   display: flex;
   justify-content: center;
+  margin-top: 170px;
+  padding: 20px 0;
 }
+
 .galagaMain{
-  margin-top: 200px;
   position: relative;
   top: 10px;
+}
+.btnWrap{
+  position: relative;
+  top:10px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  height: 150px;
+  justify-content: space-around;
+}
+.btn{
+  position: relative;
+  cursor: pointer;
+  height: 30px;
+  width: 100px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+  transition: all .2s ease-in-out;
+}
+
+.btn:hover{
+  color: #fff;
+  border: 2px solid #fff;
 }

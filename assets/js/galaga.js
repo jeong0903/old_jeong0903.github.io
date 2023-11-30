@@ -9,7 +9,7 @@ canvas.width = 400;
 canvas.height = 600;
 galagaMain.appendChild(canvas);
 
-let bgImg, jetImg, bulletImg, enemyImg, ggImg, bombImg;
+let bgImg, jetImg, bulletImg, enemyImg, ggImg;
 let gameOver = false;
 let score = 0;
 
