@@ -66,7 +66,9 @@
 #CD_CR_SG{
     font-size: 1.5rem;
 }
-.btn_back img, .btn_galaga img, .btn_candy img{
+.button.btn_back img, 
+.button.btn_galaga img, 
+.button.btn_candy img{
     width: 100px;
     height: 100px;
 }
