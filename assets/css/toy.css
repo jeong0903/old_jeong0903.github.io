@@ -3,15 +3,13 @@
 .ToyContainer::before {
     content: "";
     position: fixed;
-    top: 0;
+    top: -100px;
     left: 0;
     width: 100%;
     height: 100%;
     z-index: -1;
     background-image: url("/assets/img/toy_bgimg.jpg");
     background-size: cover;
-    /* filter: brightness(0.6); */
-    /* 배경 이미지의 밝기 조절 (선택사항) */
 }
 .banner2 {
     /* position: relative; */
@@ -45,7 +43,7 @@
 /* Toy Project 메인화면 */
 .toyProject{
     margin-top: 200PX;
-    height: 90vh;
+    height: calc(100vh - 300px);
     display: flex;
     justify-content: center;
     align-items: center;
