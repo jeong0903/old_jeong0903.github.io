@@ -1,4 +1,65 @@
-.candyContainer{
-  background-image: url(/assets/img/candy_bg.jpg);
+.ToyContainer{
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-image: url("/assets/img/candy_bg.jpg");
   background-size: cover;
+}
+
+.headerMenu li {
+  font-size: 1.5rem;
+  text-align: center;
+  list-style: none;
+}
+
+.headerMenu{
+  position: relative;
+  top: -55px;
+  z-index: 10;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 800px;
+}
+
+html{
+  overflow-x: hidden;
+}
+
+/* CANDY MAIN */
+.candyContainer{
+  height: auto;
+  padding: 220px 100px 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background-color: gold; */
+  text-align: center;
+}
+.candyScore, #score {
+  color: white;
+  background-color: pink;
+  height: auto;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+#candyMain{
+  background-color: rgba(253, 215, 221, 0.7);
+  width: 490px;
+  height: 490px;
+  border-radius: 10px;
+  border: 4px solid pink;
+  display: flex;
+  flex-wrap: wrap;
+}
+#candyMain img{
+  width: 60px;
+  height: 60px;
+  padding: 5px;
 }
