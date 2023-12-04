@@ -150,3 +150,11 @@
     font-weight: 900;
     color: aquamarine;
 }
+
+/* 반응형 웹 스타일 : 모니터 1/2 사이즈부터 */
+@media only screen and (max-width: 960px) {
+    .footer{
+        display: flex;
+        flex-direction: column;
+    }
+}

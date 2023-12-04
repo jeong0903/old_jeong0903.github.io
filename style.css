@@ -22,7 +22,7 @@
     list-style: none;
 }
 
-.headerMenu{
+.headerMenu {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -30,16 +30,17 @@
     padding-right: 200px;
 }
 
-.headerMenu a{
+.headerMenu a {
     text-decoration: none;
 }
 
-.headerMenu a:hover{
+.headerMenu a:hover {
     font-weight: 900;
     color: #fff;
-        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
-        animation: neon 3.0s infinite alternate;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+    animation: neon 3.0s infinite alternate;
 }
+
 @keyframes neon {
     from {
         text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
@@ -49,14 +50,15 @@
         text-shadow: 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 50px #ff00de, 0 0 80px #ff00de, 0 0 90px #ff00de, 0 0 110px #ff00de, 0 0 170px #ff00de;
     }
 }
+
 .header {
-height: calc(100vh - 300px);
-display: flex;
-flex-direction: column;
-justify-content: center;
-position: relative;
-padding-bottom: 100px;
-padding-top: 200px;
+    height: calc(100vh - 300px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    padding-bottom: 100px;
+    padding-top: 200px;
 }
 
 /* CONTACT */
@@ -74,20 +76,25 @@ padding-top: 200px;
     background-color: rgba(0, 0, 0, 0.6);
     transition: opacity 2s ease-in-out;
 }
+
 .contact.show {
     opacity: 1;
 }
+
 .contactWrap p {
     margin-bottom: 40px;
 }
+
 .contactWrap i {
     margin-right: 20px;
     font-size: 30px;
 }
+
 .contacWrap a {
     text-decoration: none;
 }
-#contactTitle{
+
+#contactTitle {
     font-weight: 900;
     font-size: 2.5rem;
     letter-spacing: 10px;
@@ -103,7 +110,8 @@ padding-top: 200px;
     margin-right: 30px;
     text-align: right;
 }
-.contactWrap p{
+
+.contactWrap p {
     display: flex;
     align-items: first baseline;
 }
@@ -114,17 +122,237 @@ padding-top: 200px;
     transition: transform 1.5s ease-in-out;
     transform: translateX(0);
     position: relative;
-    
+
 }
 
 .headerMenu.moveOut {
     transform: translateX(-1300px);
 }
 
-#gitBlog , #emailAddress {
+#gitBlog,
+#emailAddress {
     text-decoration: none;
 }
 
-#gitBlog:hover, #emailAddress:hover{
+#gitBlog:hover,
+#emailAddress:hover {
     color: aquamarine;
+}
+
+/* 반응형 웹 스타일 : 모니터 1/2 사이즈부터 */
+@media only screen and (max-width: 960px) {
+    .common {
+        height: auto;
+    }
+
+    .bannerWrap {
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .banner {
+        padding: 50px 0;
+    }
+
+    #banner2,
+    #banner3 {
+        margin: 0 !important;
+    }
+
+    .headerMenu {
+        padding: 0;
+        margin: 150px 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .banner {
+        width: auto;
+        height: 200px;
+    }
+
+    .bannerWrap {
+        margin-top: 100px;
+    }
+
+    .banner #banner2 {
+        margin: 15px;
+    }
+
+    .banner #banner3 {
+        margin-bottom: 20px;
+    }
+
+    .headerMenu li {
+        margin: 20px 0;
+        text-align: right;
+        font-size: 2.5rem;
+        list-style: none;
+    }
+
+    .headerMenu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        transition: transform 0.5s ease-in-out;
+        padding-right: 200px;
+    }
+
+    .headerMenu a {
+        text-decoration: none;
+    }
+
+    .headerMenu a:hover {
+        font-weight: 900;
+        color: #fff;
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+        animation: neon 3.0s infinite alternate;
+    }
+
+    @keyframes neon {
+        from {
+            text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+        }
+
+        to {
+            text-shadow: 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 50px #ff00de, 0 0 80px #ff00de, 0 0 90px #ff00de, 0 0 110px #ff00de, 0 0 170px #ff00de;
+        }
+    }
+
+    .header {
+        height: calc(100vh - 300px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        padding-bottom: 100px;
+        padding-top: 200px;
+    }
+
+    /* CONTACT */
+    .contact {
+        position: absolute;
+        top: 30%;
+        flex-direction: column;
+        align-items: baseline;
+        width: 800px;
+        height: 400px;
+        margin-left: 500px;
+        border-radius: 10px;
+        padding: 80px 150px 50px;
+        font-size: 1.5rem;
+        background-color: rgba(0, 0, 0, 0.6);
+        transition: opacity 2s ease-in-out;
+    }
+
+    .contact.show {
+        opacity: 1;
+    }
+
+    .contactWrap p {
+        margin-bottom: 40px;
+    }
+
+    .contactWrap i {
+        margin-right: 20px;
+        font-size: 30px;
+    }
+
+    .contacWrap a {
+        text-decoration: none;
+    }
+
+    #contactTitle {
+        font-weight: 900;
+        font-size: 2.5rem;
+        letter-spacing: 10px;
+        border-bottom: 1px solid #fff;
+        margin-bottom: 70px;
+    }
+
+    #contactTitle_git,
+    #contactTitle_email,
+    #contactTitle_comment {
+        display: inline-block;
+        width: 120px;
+        margin-right: 30px;
+        text-align: right;
+    }
+
+    .contactWrap p {
+        display: flex;
+        align-items: first baseline;
+    }
+
+    /* contact 클릭 : 메뉴이동과 콘택트 창 */
+
+    .headerMenu {
+        transition: transform 1.5s ease-in-out;
+        transform: translateX(0);
+        position: relative;
+
+    }
+
+    .headerMenu.moveOut {
+        transform: translateX(-1300px);
+    }
+
+    #gitBlog,
+    #emailAddress {
+        text-decoration: none;
+    }
+
+    #gitBlog:hover,
+    #emailAddress:hover {
+        color: aquamarine;
+    }
+
+    /* 반응형 웹 스타일 : 모니터 1/2 사이즈부터 */
+    @media only screen and (max-width: 960px) {
+        .common {
+            height: auto;
+        }
+
+        .bannerWrap {
+            margin-top: 100px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .banner {
+            padding: 50px 0;
+        }
+
+        #banner2,
+        #banner3 {
+            margin: 0 !important;
+        }
+
+        .headerMenu {
+            padding: 0;
+            margin: 150px 0;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .header {
+            margin-top: 50px;
+            position: relative;
+            z-index: 999;
+        }
+
+        .headerMenu li {
+            margin: 10px;
+        }
+    }
+
+    .footer {
+        position: fixed;
+        /* 화면 하단에 고정시킵니다. */
+        bottom: 0;
+        /* 화면 하단에 배치됩니다. */
+        width: 100%;
+        /* 전체 너비를 차지하도록 설정합니다. */
+    }
 }
