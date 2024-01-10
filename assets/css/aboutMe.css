@@ -1,4 +1,4 @@
-
+*{padding: 0; margin: 0;}
 .headerMenu li {
     font-size: 1.5rem;
     text-align: center;
@@ -194,4 +194,38 @@
 .screen:hover{
     /* transition: 2s ease-in; */
     opacity: 0;
+}
+
+/* 반응형 웹 스타일 : 모니터 1/2 사이즈부터 */
+@media screen and (max-width: 960px) {
+    .contents{
+        width: 100vw;
+        height: 100vh;
+    }
+    #aboutMe.aboutMe, #skill.skills, #project.project{
+        width: 100%;
+        height: auto;
+        padding: 0;
+    }
+    #aboutMe.aboutMe .aboutMeWrap, #skill.skills .skillWrap, #project.project .projectWrap{
+        padding: 50px 20px;
+        margin: 0;
+        height: auto;
+    }
+    p#aboutMeTitle, p#skillTitle, p#projectTitle{
+        width: 100%;
+    }
+    .skillele{
+        flex-wrap: wrap;
+    }
+    .projectWrap .projectList{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    div.Introduction{
+        width: 80%;
+    }
 }
