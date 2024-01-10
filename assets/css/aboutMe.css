@@ -202,6 +202,10 @@
         width: 100vw;
         height: 100vh;
     }
+    ul.headerMenu{
+        width: 100vw;
+        display: none;
+    }
     #aboutMe.aboutMe, #skill.skills, #project.project{
         width: 100%;
         height: auto;
@@ -215,16 +219,39 @@
     p#aboutMeTitle, p#skillTitle, p#projectTitle{
         width: 100%;
     }
+    .hashtag{
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+    }
     .skillele{
+        width: 90%;
         flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .icons{
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
     }
     .projectWrap .projectList{
         width: 80%;
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
     }
+    .projectWrap .projectList a{
+        margin-bottom: 20px;
+    }
+    .projectWrap{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
     div.Introduction{
         width: 80%;
     }
