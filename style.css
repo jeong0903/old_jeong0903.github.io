@@ -341,6 +341,7 @@
         .header {
             position: relative;
             z-index: 999;
+            padding: 0;
         }
 
         .headerMenu li {
